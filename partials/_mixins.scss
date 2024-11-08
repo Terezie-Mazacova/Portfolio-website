@@ -39,3 +39,35 @@
 @mixin text-small {
     font-size: 1rem;
 }
+
+
+// == BUTTONS ==
+@mixin btn-nav {
+    @include text-medium;
+    font-weight: 500;
+    line-height: $line-height;
+    padding: .875rem 1.5rem;
+    border-radius: .5rem;
+    transition: background-color 0.3s, color 0.3s;
+
+    &:hover,
+    &:focus {
+        background-color: $peach-95;
+    }
+}
+
+@mixin btn-standard {
+    @include text-medium;
+    font-weight: 500;
+    line-height: $line-height;
+    color: $peach-99;
+    background-color: $purple-50;
+    border-radius: .5rem;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+
+    &:hover,
+    &:focus {
+        background-color: $purple-60;
+    }
+}

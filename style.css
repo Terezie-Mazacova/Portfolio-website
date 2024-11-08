@@ -1,4 +1,62 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+.header-wrapper .header-content {
+  border-bottom: 1px solid #E1DBD1;
+}
+.header-wrapper .header-content .branding-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 10.125rem;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+.header-wrapper .header-content .branding-nav .nav-logo {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #5700FF;
+}
+.header-wrapper .header-content .branding-nav .nav-actions {
+  display: flex;
+  gap: 3.125rem;
+  align-items: center;
+}
+.header-wrapper .header-content .branding-nav .nav-actions ul {
+  display: flex;
+}
+.header-wrapper .header-content .branding-nav .nav-actions ul li {
+  list-style-type: none;
+}
+.header-wrapper .header-content .branding-nav .nav-actions ul li a {
+  text-decoration: none;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 150%;
+  padding: 0.875rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s, color 0.3s;
+  color: #333333;
+}
+.header-wrapper .header-content .branding-nav .nav-actions ul li a:hover, .header-wrapper .header-content .branding-nav .nav-actions ul li a:focus {
+  background-color: #F5F3F0;
+}
+.header-wrapper .header-content .branding-nav .nav-actions .btn-booking {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 150%;
+  color: #FDFDFC;
+  background-color: #5700FF;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+  padding: 1rem 1.125rem;
+}
+.header-wrapper .header-content .branding-nav .nav-actions .btn-booking:hover, .header-wrapper .header-content .branding-nav .nav-actions .btn-booking:focus {
+  background-color: #7833FF;
+}
+
 *, *::before, *::after {
   padding: 0;
   margin: 0;
@@ -8,4 +66,10 @@
 body {
   font-family: "Manrope", sans-serif;
   background-color: #EEEBE5;
+}
+
+.container {
+  padding: 0 10.125rem;
+  max-width: 120rem;
+  margin: 0 auto;
 }/*# sourceMappingURL=style.css.map */

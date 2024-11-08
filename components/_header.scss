@@ -1,0 +1,48 @@
+.header-wrapper {
+    .header-content {
+        border-bottom: 1px solid $peach-85;
+        
+        .branding-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.25rem 10.125rem;
+            max-width: 120rem;
+            margin: 0 auto;
+    
+            .nav-logo {
+                text-decoration: none;
+                @include text-medium-large;
+                font-weight: 600;
+                color: $purple-50;
+            }
+    
+            .nav-actions {
+                display: flex;
+                gap: 3.125rem;
+                align-items: center;
+    
+                ul {
+                    display: flex;
+    
+                    li {
+                        list-style-type: none;
+    
+                        a {
+                            text-decoration: none;
+                            @include btn-nav;
+                            color: $grey-20;
+                        }
+                    }
+                }
+
+                .btn-booking {
+                    display: flex;
+                    gap: .5rem;
+                    @include btn-standard;
+                    padding: 1rem 1.125rem;
+                }
+            }
+        }
+    }
+}
