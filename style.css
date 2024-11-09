@@ -41,8 +41,6 @@
   background-color: #F5F3F0;
 }
 .header-wrapper .header-content .branding-nav .nav-actions .btn-booking {
-  display: flex;
-  gap: 0.5rem;
   font-size: 1.125rem;
   font-weight: 500;
   line-height: 150%;
@@ -50,11 +48,119 @@
   background-color: #5700FF;
   border-radius: 0.5rem;
   text-decoration: none;
-  transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s;
   padding: 1rem 1.125rem;
 }
 .header-wrapper .header-content .branding-nav .nav-actions .btn-booking:hover, .header-wrapper .header-content .branding-nav .nav-actions .btn-booking:focus {
   background-color: #7833FF;
+}
+.header-wrapper .header-content .branding-nav .nav-actions .btn-booking .bi-telephone-fill {
+  margin-right: 0.5rem;
+}
+.header-wrapper .hero-section {
+  display: flex;
+}
+.header-wrapper .hero-section .hero-content {
+  display: flex;
+  gap: 5rem;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 0 0 10.125rem;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+.header-wrapper .hero-section .hero-content .hero-intro {
+  padding-right: 9.75rem;
+}
+.header-wrapper .hero-section .hero-content .hero-intro .intro-greeting {
+  font-size: 1.75rem;
+  font-weight: 500;
+  line-height: 150%;
+  color: #4C4C4C;
+  background-color: #F5F3F0;
+  border-radius: 0.8125rem;
+  padding: 0.625rem 1.125rem;
+  max-width: 13.75rem;
+  white-space: nowrap;
+  margin-bottom: 1.25rem;
+}
+.header-wrapper .hero-section .hero-content .hero-intro h1 {
+  font-size: 3.625rem;
+  line-height: 150%;
+  font-weight: 600;
+  color: #191919;
+  margin-bottom: 0.625rem;
+}
+.header-wrapper .hero-section .hero-content .hero-intro .intro-description {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 150%;
+  color: #4C4C4C;
+  margin-bottom: 3.125rem;
+}
+.header-wrapper .hero-section .hero-content .hero-actions {
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+}
+.header-wrapper .hero-section .hero-content .hero-actions .btn-book-call {
+  display: flex;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 150%;
+  color: #FDFDFC;
+  background-color: #5700FF;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  padding: 1.125rem 1.5rem;
+}
+.header-wrapper .hero-section .hero-content .hero-actions .btn-book-call:hover, .header-wrapper .hero-section .hero-content .hero-actions .btn-book-call:focus {
+  background-color: #7833FF;
+}
+.header-wrapper .hero-section .hero-content .hero-actions .btn-book-call .bi-telephone-fill {
+  margin-right: 0.5rem;
+}
+.header-wrapper .hero-section .hero-content .hero-actions .btn-portfolio {
+  font-size: 1.125rem;
+  text-decoration: none;
+  font-weight: 500;
+  line-height: 150%;
+  color: #191919;
+}
+.header-wrapper .hero-section .hero-content .hero-actions .btn-portfolio:hover .bi-arrow-right {
+  transform: translateX(0.5rem);
+}
+.header-wrapper .hero-section .hero-content .hero-actions .btn-portfolio .bi-arrow-right {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+.header-wrapper .hero-section .hero-content .hero-stats {
+  display: flex;
+  justify-content: space-around;
+  background-color: #F7F6F3;
+  padding: 2.5rem 3.125rem;
+  border-top-left-radius: 0.75rem;
+  border-bottom-left-radius: 0.75rem;
+}
+.header-wrapper .hero-section .hero-content .hero-stats .stat-item .stat-number {
+  font-size: 3rem;
+  line-height: 150%;
+  font-weight: 700;
+  line-height: 150%;
+  color: #333333;
+}
+.header-wrapper .hero-section .hero-content .hero-stats .stat-item .stat-number span {
+  color: #5700FF;
+}
+.header-wrapper .hero-section .hero-content .hero-stats .stat-item .stat-description {
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 150%;
+  color: #4C4C4C;
+}
+.header-wrapper .hero-section .hero-image img {
+  border-bottom-left-radius: 1.875rem;
 }
 
 *, *::before, *::after {
