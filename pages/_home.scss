@@ -1,0 +1,68 @@
+// == SECTION CREATIVE SKILLS ==
+.section-skills {
+    margin-bottom: 9.375rem;
+
+    .skills-header {
+        text-align: center;
+        margin-bottom: 5rem;
+
+        h2 {
+            @include h2;
+            font-weight: 600;
+            color: $grey-20;
+        }
+
+        p {
+            @include text-medium;
+            font-weight: 400;
+            line-height: $line-height;
+            color: $grey-30;
+        }
+    }
+
+    .skills-cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.875rem;
+
+        .skill-card {
+            padding: 3.125rem;
+            background-color: $peach-96;
+            border-radius: .75rem;
+
+            .skills-icon-wrapper {
+                background-color: $purple-50;
+                padding: 1rem;
+                border-radius: .5rem;
+                box-shadow: inset 0 0 14px 4px rgba($white, 0.5);
+                margin: 0 auto 1.875rem auto;
+                width: 4.8125rem;
+                height: 4.8125rem;
+
+                .skill-icon {
+                    width: 2.8125rem;
+                    height: 2.8125rem;
+                    color: $peach-99;
+                }
+            }
+
+            .skills-text-wrapper {
+                text-align: center;
+
+                h3 {
+                    @include h3;
+                    font-weight: 600;
+                    color: $grey-20;
+                    margin-bottom: .625rem;
+                }
+
+                p {
+                    @include text-medium;
+                    font-weight: 400;
+                    line-height: $line-height;
+                    color: $grey-30;
+                }
+            }
+        }
+    }
+}
