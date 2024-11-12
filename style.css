@@ -149,6 +149,8 @@
 .header-wrapper .hero-section .hero-content .hero-stats .stat-item .stat-number {
   font-size: 3rem;
   line-height: 150%;
+  font-weight: 600;
+  color: #333333;
   font-weight: 700;
   line-height: 150%;
   color: #333333;
@@ -178,6 +180,7 @@
   line-height: 150%;
   font-weight: 600;
   color: #333333;
+  margin-bottom: 0.375rem;
 }
 .section-skills .skills-header p {
   font-size: 1.125rem;
@@ -214,12 +217,64 @@
 }
 .section-skills .skills-cards .skill-card .skills-text-wrapper h3 {
   font-size: 1.5rem;
-  line-height: 150%;
   font-weight: 600;
+  line-height: 150%;
   color: #333333;
   margin-bottom: 0.625rem;
 }
 .section-skills .skills-cards .skill-card .skills-text-wrapper p {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 150%;
+  color: #4C4C4C;
+}
+
+.section-benefits {
+  margin-bottom: 9.375rem;
+}
+.section-benefits .header-benefits {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.section-benefits .header-benefits h2 {
+  font-size: 3rem;
+  line-height: 150%;
+  font-weight: 600;
+  color: #333333;
+}
+.section-benefits .header-benefits p {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 150%;
+  color: #4C4C4C;
+}
+.section-benefits .benefits-cards {
+  display: grid;
+  gap: 1.875rem;
+  grid-template-columns: repeat(12, 1fr);
+}
+.section-benefits .benefits-cards .benefit-card {
+  padding: 3.125rem;
+  border-radius: 0.75rem;
+  background-color: #F7F6F3;
+}
+.section-benefits .benefits-cards .benefit-card:nth-child(1) {
+  grid-column: span 6;
+}
+.section-benefits .benefits-cards .benefit-card:nth-child(2) {
+  grid-column: span 6;
+}
+.section-benefits .benefits-cards .benefit-card:nth-child(3), .section-benefits .benefits-cards .benefit-card:nth-child(4), .section-benefits .benefits-cards .benefit-card:nth-child(5) {
+  grid-column: span 4;
+}
+.section-benefits .benefits-cards .benefit-card h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 150%;
+  color: #333333;
+  margin-bottom: 1.875rem;
+}
+.section-benefits .benefits-cards .benefit-card p {
   font-size: 1.125rem;
   font-weight: 400;
   line-height: 150%;
