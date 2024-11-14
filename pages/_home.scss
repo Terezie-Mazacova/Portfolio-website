@@ -124,3 +124,62 @@
     }
 }
 
+
+// == SECTION MY WORKS ==
+.section-projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 9.375rem;
+
+    .projects-header {
+        text-align: center;
+        margin-bottom: 5rem;
+
+        h2 {
+            @include h2;
+            margin-bottom: .375rem;
+        }
+
+        p {
+            @include text-medium;
+            font-weight: 400;
+            line-height: $line-height;
+            color: $grey-30;
+        }
+    }
+
+    .projects-list {
+        display: flex;
+        justify-content: center;
+        gap: 1.875rem;
+        margin-bottom: 3.125rem;
+
+        .project {
+            background-color: $peach-96;
+            padding: 3.125rem;
+            border-radius: .75rem;
+
+            h3 {
+                @include h3-small;
+                margin-bottom: 1.875rem;
+            }
+        }
+    }
+
+    .view-projects-btn {
+        @include btn-standard;
+        padding: 1.125rem 1.5rem;
+
+        &:hover .bi-arrow-right {
+            transform: translateX(0.5rem);
+        }
+
+        .bi-arrow-right {
+            display: inline-block;
+            transition: transform 0.3s ease;
+            margin-left: .5rem;
+        }
+    }
+}
+

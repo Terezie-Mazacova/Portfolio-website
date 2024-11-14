@@ -281,6 +281,70 @@
   color: #4C4C4C;
 }
 
+.section-projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 9.375rem;
+}
+.section-projects .projects-header {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.section-projects .projects-header h2 {
+  font-size: 3rem;
+  line-height: 150%;
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 0.375rem;
+}
+.section-projects .projects-header p {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 150%;
+  color: #4C4C4C;
+}
+.section-projects .projects-list {
+  display: flex;
+  justify-content: center;
+  gap: 1.875rem;
+  margin-bottom: 3.125rem;
+}
+.section-projects .projects-list .project {
+  background-color: #F7F6F3;
+  padding: 3.125rem;
+  border-radius: 0.75rem;
+}
+.section-projects .projects-list .project h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 150%;
+  color: #333333;
+  margin-bottom: 1.875rem;
+}
+.section-projects .view-projects-btn {
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 150%;
+  color: #FDFDFC;
+  background-color: #5700FF;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  padding: 1.125rem 1.5rem;
+}
+.section-projects .view-projects-btn:hover, .section-projects .view-projects-btn:focus {
+  background-color: #7833FF;
+}
+.section-projects .view-projects-btn:hover .bi-arrow-right {
+  transform: translateX(0.5rem);
+}
+.section-projects .view-projects-btn .bi-arrow-right {
+  display: inline-block;
+  transition: transform 0.3s ease;
+  margin-left: 0.5rem;
+}
+
 *, *::before, *::after {
   padding: 0;
   margin: 0;

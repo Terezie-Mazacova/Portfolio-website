@@ -23,6 +23,13 @@
     color: $grey-20;
 }
 
+@mixin h3-small {
+    @include text-large;
+    font-weight: 600;
+    line-height: $line-height;
+    color: $grey-20;
+}
+
 // == PARAGRAPHS ==
 @mixin text-xlarge {
     font-size: 1.75rem;
