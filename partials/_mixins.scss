@@ -59,7 +59,7 @@
     line-height: $line-height;
     padding: .875rem 1.5rem;
     border-radius: .5rem;
-    transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.3s;
 
     &:hover,
     &:focus {
@@ -81,4 +81,12 @@
     &:focus {
         background-color: $purple-60;
     }
+}
+
+// == OTHER ==
+@mixin logo-style {
+    text-decoration: none;
+    @include text-medium-large;
+    font-weight: 600;
+    color: $purple-50;
 }

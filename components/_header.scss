@@ -14,10 +14,7 @@
             margin: 0 auto;
     
             .nav-logo {
-                text-decoration: none;
-                @include text-medium-large;
-                font-weight: 600;
-                color: $purple-50;
+                @include logo-style;
             }
     
             .nav-actions {

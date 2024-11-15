@@ -37,7 +37,7 @@
   line-height: 150%;
   padding: 0.875rem 1.5rem;
   border-radius: 0.5rem;
-  transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s;
   color: #333333;
 }
 .header-wrapper .header-content .branding-nav .nav-actions ul li a:hover, .header-wrapper .header-content .branding-nav .nav-actions ul li a:focus {
@@ -166,6 +166,96 @@
 }
 .header-wrapper .hero-section .hero-image img {
   border-bottom-left-radius: 1.875rem;
+}
+
+.footer-content {
+  padding-top: 60px;
+  padding-bottom: 1.25rem;
+  border-top: 1px solid #E1DBD1;
+}
+.footer-content .footer-logo-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-content .footer-logo-nav .footer-logo {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #5700FF;
+}
+.footer-content .footer-logo-nav .footer-nav ul {
+  display: flex;
+}
+.footer-content .footer-logo-nav .footer-nav ul li {
+  list-style: none;
+}
+.footer-content .footer-logo-nav .footer-nav ul li a {
+  text-decoration: none;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 150%;
+  padding: 0.875rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s;
+  color: #333333;
+}
+.footer-content .footer-logo-nav .footer-nav ul li a:hover, .footer-content .footer-logo-nav .footer-nav ul li a:focus {
+  background-color: #F5F3F0;
+}
+.footer-content .footer-logo-nav .social-icons {
+  display: flex;
+  gap: 0.875rem;
+}
+.footer-content .footer-logo-nav .social-icons .social-icon {
+  display: flex;
+  background-color: #5700FF;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  box-shadow: inset 0 0 14px 4px rgba(255, 255, 255, 0.5);
+}
+.footer-content .footer-contact {
+  display: flex;
+  justify-content: center;
+  border: 1px solid #E1DBD1;
+  border-radius: 0.5rem;
+  padding: 1.5rem 2rem;
+  margin: 30px 350px;
+  font-style: normal;
+}
+.footer-content .footer-contact .contact-item {
+  display: flex;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+.footer-content .footer-contact .contact-item .contact-icon {
+  width: 24px;
+  height: 24px;
+  fill: #5700FF;
+}
+.footer-content .footer-contact .contact-item .contact-text {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 150%;
+  color: #4C4C4C;
+}
+.footer-content .footer-contact .contact-item-left-side {
+  padding-right: 2.5rem;
+}
+.footer-content .footer-contact .contact-item-center {
+  border-left: 1px solid #E1DBD1;
+  border-right: 1px solid #E1DBD1;
+  padding: 0 2.5rem;
+}
+.footer-content .footer-contact .contact-item-right-side {
+  padding-left: 2.5rem;
+}
+.footer-content .footer-copyright {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 150%;
+  color: #808080;
 }
 
 .section-skills {
