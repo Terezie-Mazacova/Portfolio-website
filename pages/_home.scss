@@ -183,3 +183,155 @@
     }
 }
 
+// == SECTION FAQ ==
+.section-faq {
+    margin-bottom: 9.375rem;
+
+    .faq-header {
+        text-align: center;
+        margin-bottom: 5rem;
+
+        h2 {
+            @include h2;
+            margin-bottom: .375rem;
+        }
+
+        p {
+            @include text-medium;
+            font-weight: 400;
+            line-height: $line-height;
+            color: $grey-30;
+        }
+    }
+
+    .faq-wrapper {
+        display: flex;
+        gap: 3.125rem;
+
+        .faq-container {
+            background-color: $peach-96;
+            border-radius: .75rem;
+            padding: 3.125rem;
+            width: 70%;
+            
+            .faq {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 1.875rem;
+                margin-bottom: 1.875rem;
+                transition: 0.3s ease;
+                background-color: $peach-92;
+                border-radius: .75rem;
+        
+                &:last-child {
+                    margin-bottom: 0;
+                }
+        
+                .faq-title {
+                    @include text-large;
+                    font-weight: 500;
+                    color: $grey-20;
+                }
+
+                .faq-text {
+                    display: none;
+                    @include text-medium;
+                    font-weight: 400;
+                    line-height: 150%;
+                    color: $grey-30;
+                    max-width: 47.0625rem;
+                }
+
+                &.active {
+                    align-items: flex-start;
+
+                    .faq-title {
+                        margin-bottom: 1rem;
+                    }
+        
+                    .faq-text {
+                        display: block;
+                    }
+                }
+                
+        
+                .faq-toggle {
+                    margin-left: 3.125rem;
+                    border: 1px solid $peach-85;
+                    background-color: unset;
+                    border-radius: .375rem;
+                    cursor: pointer;
+                    padding: .375rem;
+                    height: 2.875rem;
+                    width: 2.875rem;
+                    color: $grey-20;
+                }
+            }
+        
+            .faq-toggle .faq-icon-close {
+                display: none;
+            }
+        
+            .faq.active .faq-toggle .faq-icon-close {
+                display: block;
+            }
+        
+            .faq.active .faq-toggle .faq-icon-plus {
+                display: none;
+            }
+        }
+
+        .faq-extra {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1.875rem;
+            background-color: $peach-96;
+            border-radius: .75rem;
+            padding: 3.125rem;
+            height: 1%;
+
+
+            .faq-icon-container {
+                background-color: $purple-50;
+                box-shadow: inset 0 0 14px 4px rgba($white, 0.5);
+                padding: 1rem;
+                border-radius: .5rem;
+                
+                .faq-extra-icon {
+                    width: 2.125rem;
+                    height: 2.125rem;
+                    color: $white;
+                }
+            }
+
+            .faq-extra-content {
+                h3 {
+                    @include text-medium-large;
+                    font-weight: 600;
+                    line-height: $line-height;
+                    color: $grey-20;
+                    margin-bottom: .875rem;
+                }
+
+                p {
+                    @include text-medium;
+                    font-weight: 400;
+                    line-height: $line-height;
+                    color: $grey-30;
+                }
+            }
+
+            .faq-contact-link {
+                @include btn-standard;
+                padding: 1.125rem 1.5rem;
+            }
+            
+        }
+    }
+}
+
+
+
