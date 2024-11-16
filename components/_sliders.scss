@@ -1,0 +1,134 @@
+// == TESTIMONIALS SECTION ==
+.testimonials-section{
+    margin-bottom: 9.375rem;
+
+    .header-testimonials {
+        text-align: center;
+        margin-bottom: 5rem;
+
+        h2 {
+            @include h2;
+            margin-bottom: .375rem;
+        }
+
+        p {
+            @include text-medium;
+            font-weight: 400;
+            line-height: $line-height;
+        }
+    }
+
+
+    .splide__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid $peach-85;
+        padding-bottom: 1.25rem;
+        margin-bottom: 3.125rem;
+    
+        .splide__reviews {
+            @include text-large;
+            font-weight: 500;
+            line-height: $line-height;
+            color: $grey-30;
+        }
+    
+        .splide__arrow--prev {
+            svg {
+                transform: rotate(180deg);
+            }
+        }
+        
+        .splide__arrow--next {
+            margin-left: 1rem;
+    
+            svg {
+                transform: rotate(180deg);
+            }
+        }
+    
+        .splide__arrow {
+            position: static;
+            top: auto;
+            transform: none;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $peach-98;
+            border: 1px solid $peach-85;
+            border-radius: .5rem;
+            width: 2.125rem;
+            height: 2.125rem;
+            padding: .375rem;
+            opacity: 1;
+        }
+    }
+
+    .testimonial-card {
+        background-color: $peach-96;
+        padding: 3.125rem;
+        border-radius: .75rem;
+
+        .testimonial-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .testimonial-header {
+                h3 {
+                    @include h3-small;
+                    font-weight: 500 !important;
+                }
+
+                .testimonial-domain {
+                    @include text-medium;
+                    font-weight: 400;
+                    line-height: $line-height;
+                    color: $grey-40;
+                }
+            }
+
+            .testimonial-social {
+                display: flex;
+                gap: .625rem;
+
+                .testimonial-social-link {
+                    padding: .75rem;
+                    border: 1px solid $peach-90;
+                    border-radius: .5rem;
+                }
+            }
+        }
+
+        .testimonial-rating {
+            display: flex;
+            gap: .3125rem;
+            color: $purple-50;
+            margin-top: 1.875rem;
+            margin-bottom: 1.875rem;
+
+            .testimonial-rating-star {
+                width: 1.5rem;
+                height: 1.5rem;
+            }
+        }
+
+        blockquote {
+            p {
+                @include text-medium;
+                font-weight: 400;
+                line-height: $line-height;
+                color: $grey-30;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
