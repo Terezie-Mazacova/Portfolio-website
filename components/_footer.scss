@@ -64,10 +64,7 @@
             }
 
             .contact-text {
-                @include text-medium;
-                font-weight: 400;
-                line-height: $line-height;
-                color: $grey-30;
+                @include global-paragraph;
             }            
         }
 

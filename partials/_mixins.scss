@@ -51,6 +51,10 @@
     font-size: 1rem;
 }
 
+@mixin text-xsmall {
+    font-size: .875rem;
+}
+
 
 // == BUTTONS ==
 @mixin btn-nav {
@@ -89,4 +93,15 @@
     @include text-medium-large;
     font-weight: 600;
     color: $purple-50;
+}
+
+@mixin global-paragraph {
+    @include text-medium;
+    font-weight: 400;
+    line-height: $line-height;
+    color: $grey-30;
+
+    @media (max-width: 767px) {
+        @include text-xsmall;
+    }
 }

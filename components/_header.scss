@@ -85,10 +85,7 @@
                 }
 
                 .intro-description {
-                    @include text-medium;
-                    font-weight: 400;
-                    line-height: $line-height;
-                    color: $grey-30;
+                    @include global-paragraph;
                     margin-bottom: 3.125rem;
                 }
             }
@@ -148,10 +145,9 @@
                     }
 
                     .stat-description {
-                        @include text-medium;
+                        @include global-paragraph;
                         font-weight: 500;
-                        line-height: $line-height;
-                        color: $grey-30;
+                        
                     }
                 }
             }

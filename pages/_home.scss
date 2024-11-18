@@ -12,10 +12,7 @@
         }
 
         p {
-            @include text-medium;
-            font-weight: 400;
-            line-height: $line-height;
-            color: $grey-30;
+            @include global-paragraph;
         }
     }
 
@@ -54,10 +51,7 @@
                 }
 
                 p {
-                    @include text-medium;
-                    font-weight: 400;
-                    line-height: $line-height;
-                    color: $grey-30;
+                    @include global-paragraph;
                 }
             }
         }
@@ -77,10 +71,7 @@
         }
 
         p {
-            @include text-medium;
-            font-weight: 400;
-            line-height: $line-height;
-            color: $grey-30;
+            @include global-paragraph;
         }
     }
 
@@ -115,10 +106,7 @@
             }
 
             p {
-                @include text-medium;
-                font-weight: 400;
-                line-height: $line-height;
-                color: $grey-30;
+                @include global-paragraph;
             }
         }
     }
@@ -142,10 +130,7 @@
         }
 
         p {
-            @include text-medium;
-            font-weight: 400;
-            line-height: $line-height;
-            color: $grey-30;
+            @include global-paragraph;
         }
     }
 
@@ -197,10 +182,7 @@
         }
 
         p {
-            @include text-medium;
-            font-weight: 400;
-            line-height: $line-height;
-            color: $grey-30;
+            @include global-paragraph;
         }
     }
 
@@ -236,10 +218,7 @@
 
                 .faq-text {
                     display: none;
-                    @include text-medium;
-                    font-weight: 400;
-                    line-height: 150%;
-                    color: $grey-30;
+                    @include global-paragraph;
                     max-width: 47.0625rem;
                 }
 
@@ -317,10 +296,7 @@
                 }
 
                 p {
-                    @include text-medium;
-                    font-weight: 400;
-                    line-height: $line-height;
-                    color: $grey-30;
+                    @include global-paragraph;
                 }
             }
 

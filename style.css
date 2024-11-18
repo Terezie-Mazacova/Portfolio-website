@@ -101,6 +101,11 @@
   color: #4C4C4C;
   margin-bottom: 3.125rem;
 }
+@media (max-width: 767px) {
+  .header-wrapper .hero-section .hero-content .hero-intro .intro-description {
+    font-size: 0.875rem;
+  }
+}
 .header-wrapper .hero-section .hero-content .hero-actions {
   display: flex;
   gap: 2.5rem;
@@ -160,9 +165,15 @@
 }
 .header-wrapper .hero-section .hero-content .hero-stats .stat-item .stat-description {
   font-size: 1.125rem;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 150%;
   color: #4C4C4C;
+  font-weight: 500;
+}
+@media (max-width: 767px) {
+  .header-wrapper .hero-section .hero-content .hero-stats .stat-item .stat-description {
+    font-size: 0.875rem;
+  }
 }
 .header-wrapper .hero-section .hero-image img {
   border-bottom-left-radius: 1.875rem;
@@ -239,6 +250,11 @@
   line-height: 150%;
   color: #4C4C4C;
 }
+@media (max-width: 767px) {
+  .footer-content .footer-contact .contact-item .contact-text {
+    font-size: 0.875rem;
+  }
+}
 .footer-content .footer-contact .contact-item-left-side {
   padding-right: 2.5rem;
 }
@@ -276,6 +292,12 @@
   font-size: 1.125rem;
   font-weight: 400;
   line-height: 150%;
+  color: #4C4C4C;
+}
+@media (max-width: 767px) {
+  .testimonials-section .header-testimonials p {
+    font-size: 0.875rem;
+  }
 }
 .testimonials-section .splide__header {
   display: flex;
@@ -336,7 +358,13 @@
   font-size: 1.125rem;
   font-weight: 400;
   line-height: 150%;
+  color: #4C4C4C;
   color: #666666;
+}
+@media (max-width: 767px) {
+  .testimonials-section .testimonial-card .testimonial-meta .testimonial-header .testimonial-domain {
+    font-size: 0.875rem;
+  }
 }
 .testimonials-section .testimonial-card .testimonial-meta .testimonial-social {
   display: flex;
@@ -364,6 +392,11 @@
   line-height: 150%;
   color: #4C4C4C;
 }
+@media (max-width: 767px) {
+  .testimonials-section .testimonial-card blockquote p {
+    font-size: 0.875rem;
+  }
+}
 
 .section-skills {
   margin-bottom: 9.375rem;
@@ -384,6 +417,11 @@
   font-weight: 400;
   line-height: 150%;
   color: #4C4C4C;
+}
+@media (max-width: 767px) {
+  .section-skills .skills-header p {
+    font-size: 0.875rem;
+  }
 }
 .section-skills .skills-cards {
   display: grid;
@@ -425,6 +463,11 @@
   line-height: 150%;
   color: #4C4C4C;
 }
+@media (max-width: 767px) {
+  .section-skills .skills-cards .skill-card .skills-text-wrapper p {
+    font-size: 0.875rem;
+  }
+}
 
 .section-benefits {
   margin-bottom: 9.375rem;
@@ -444,6 +487,11 @@
   font-weight: 400;
   line-height: 150%;
   color: #4C4C4C;
+}
+@media (max-width: 767px) {
+  .section-benefits .header-benefits p {
+    font-size: 0.875rem;
+  }
 }
 .section-benefits .benefits-cards {
   display: grid;
@@ -477,6 +525,11 @@
   line-height: 150%;
   color: #4C4C4C;
 }
+@media (max-width: 767px) {
+  .section-benefits .benefits-cards .benefit-card p {
+    font-size: 0.875rem;
+  }
+}
 
 .section-projects {
   display: flex;
@@ -500,6 +553,11 @@
   font-weight: 400;
   line-height: 150%;
   color: #4C4C4C;
+}
+@media (max-width: 767px) {
+  .section-projects .projects-header p {
+    font-size: 0.875rem;
+  }
 }
 .section-projects .projects-list {
   display: flex;
@@ -562,6 +620,11 @@
   line-height: 150%;
   color: #4C4C4C;
 }
+@media (max-width: 767px) {
+  .section-faq .faq-header p {
+    font-size: 0.875rem;
+  }
+}
 .section-faq .faq-wrapper {
   display: flex;
   gap: 3.125rem;
@@ -597,6 +660,11 @@
   line-height: 150%;
   color: #4C4C4C;
   max-width: 47.0625rem;
+}
+@media (max-width: 767px) {
+  .section-faq .faq-wrapper .faq-container .faq .faq-text {
+    font-size: 0.875rem;
+  }
 }
 .section-faq .faq-wrapper .faq-container .faq.active {
   align-items: flex-start;
@@ -661,6 +729,11 @@
   font-weight: 400;
   line-height: 150%;
   color: #4C4C4C;
+}
+@media (max-width: 767px) {
+  .section-faq .faq-wrapper .faq-extra .faq-extra-content p {
+    font-size: 0.875rem;
+  }
 }
 .section-faq .faq-wrapper .faq-extra .faq-contact-link {
   font-size: 1.125rem;
