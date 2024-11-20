@@ -144,6 +144,10 @@
                     max-width: 13.75rem;
                     white-space: nowrap;
                     margin-bottom: 1.25rem;
+
+                    @media screen and (max-width: 767px) {
+                        @include text-medium;
+                    }
                 }
 
                 h1 {
@@ -180,6 +184,10 @@
                     font-weight: 500;
                     line-height: $line-height;
                     color: $grey-10;
+
+                    @media screen and (max-width: 767px) {
+                        @include text-xsmall;
+                    }
                     
 
                     &:hover .bi-arrow-right {
@@ -208,6 +216,10 @@
                         line-height: $line-height;
                         color: $grey-20;
 
+                        @media screen and (max-width: 767px) {
+                            @include text-medium-large;
+                        }
+
                         span {
                             color: $purple-50;
                         }
@@ -225,6 +237,8 @@
         .hero-image {
             img {
                 border-bottom-left-radius: 1.875rem;
+                width: 100%;
+                object-fit: cover;
             }
         }
     }
@@ -241,6 +255,31 @@
     .mobile-nav {
         width: 100% !important;
     }
+
+    // == HERO CONTENT == 
+    .hero-section {
+        padding: 0 1rem !important;
+
+        .hero-content {
+            gap: 2.5rem !important;
+            margin-top: 1.875rem !important;
+
+            .hero-intro {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+
+                .intro-description {
+                    margin-bottom: 1.5rem !important;
+                }
+
+                .hero-actions {
+                    gap: 1.25rem !important;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
@@ -248,12 +287,26 @@
     .branding-nav {
         padding: 1.25rem 2rem !important;
     }
+
+    // == HERO CONTENT ==
+    .hero-section {
+        padding: 0 2rem;
+
+        .hero-content {
+            margin-top: 3.75rem !important;
+        }
+    }
 }
 
 @media screen and (min-width: 1280px) and (max-width: 1440px) {
     // == LOGO AND NAV ==
     .branding-nav {
         padding: 1.25rem 5rem !important;
+    }
+
+    // == HERO CONTENT ==
+    .hero-content {
+        padding-left: 5rem !important;
     }
 }
 
@@ -263,12 +316,60 @@
     .header-wrapper {
         margin-bottom: 3.75rem;
     }
+
+    // == HERO CONTENT == 
+    .hero-stats {
+        display: grid !important;
+        grid-template-columns: repeat(4, 1fr);
+        gap: .625rem;
+        background-color: unset !important;
+        justify-content: unset !important;
+        padding: 0 !important;
+        border-top-left-radius: 0 !important;
+        border-bottom-left-radius: 0 !important;
+
+        .stat-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: $peach-96;
+            border-radius: .5rem;
+            padding: 1rem 1.125rem;
+
+            &:nth-child(1) {
+                grid-column: span 4;
+            }
+
+            &:nth-child(2) {
+                grid-column: span 2; 
+            }
+
+            &:nth-child(3) {
+                grid-column: span 2; 
+            }
+        }
+    }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
     // == HEADER ==
     .header-wrapper {
         margin-bottom: 6.25rem;
+    }
+}
+
+@media screen and (max-width: 1279px) {
+    // == HERO CONTENT ==
+    .hero-section {
+        flex-direction: column-reverse;
+
+        .hero-content {
+            padding: 0 !important;
+        }
+
+        .hero-intro {
+            padding-right: 0 !important;
+        }
     }
 }
 

@@ -2,6 +2,14 @@
 @mixin h1 {
     font-size: 3.625rem;
     line-height: $line-height;
+
+    @media (max-width: 767px) {
+        @include text-xxlarge;
+    }
+
+    @media (min-width: 768px) and (max-width: 1440px) {
+        @include h1-small;
+    }
 }
 
 @mixin h1-small {
@@ -31,6 +39,10 @@
 }
 
 // == PARAGRAPHS ==
+@mixin text-xxlarge {
+    font-size: 2.375rem;
+}
+
 @mixin text-xlarge {
     font-size: 1.75rem;
 }
@@ -84,6 +96,11 @@
     &:hover,
     &:focus {
         background-color: $purple-60;
+    }
+
+    @media (max-width: 767px) {
+        @include text-xsmall;
+        padding: .875rem 1rem;
     }
 }
 

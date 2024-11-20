@@ -57,6 +57,12 @@
 .header-wrapper .header-content .branding-nav .nav-actions .btn-booking:hover, .header-wrapper .header-content .branding-nav .nav-actions .btn-booking:focus {
   background-color: #7833FF;
 }
+@media (max-width: 767px) {
+  .header-wrapper .header-content .branding-nav .nav-actions .btn-booking {
+    font-size: 0.875rem;
+    padding: 0.875rem 1rem;
+  }
+}
 .header-wrapper .header-content .branding-nav .nav-actions .btn-booking .bi-telephone-fill {
   margin-right: 0.5rem;
 }
@@ -156,12 +162,28 @@
   white-space: nowrap;
   margin-bottom: 1.25rem;
 }
+@media screen and (max-width: 767px) {
+  .header-wrapper .hero-section .hero-content .hero-intro .intro-greeting {
+    font-size: 1.125rem;
+  }
+}
 .header-wrapper .hero-section .hero-content .hero-intro h1 {
   font-size: 3.625rem;
   line-height: 150%;
   font-weight: 600;
   color: #191919;
   margin-bottom: 0.625rem;
+}
+@media (max-width: 767px) {
+  .header-wrapper .hero-section .hero-content .hero-intro h1 {
+    font-size: 2.375rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1440px) {
+  .header-wrapper .hero-section .hero-content .hero-intro h1 {
+    font-size: 3rem;
+    line-height: 150%;
+  }
 }
 .header-wrapper .hero-section .hero-content .hero-intro .intro-description {
   font-size: 1.125rem;
@@ -195,6 +217,12 @@
 .header-wrapper .hero-section .hero-content .hero-actions .btn-book-call:hover, .header-wrapper .hero-section .hero-content .hero-actions .btn-book-call:focus {
   background-color: #7833FF;
 }
+@media (max-width: 767px) {
+  .header-wrapper .hero-section .hero-content .hero-actions .btn-book-call {
+    font-size: 0.875rem;
+    padding: 0.875rem 1rem;
+  }
+}
 .header-wrapper .hero-section .hero-content .hero-actions .btn-book-call .bi-telephone-fill {
   margin-right: 0.5rem;
 }
@@ -204,6 +232,11 @@
   font-weight: 500;
   line-height: 150%;
   color: #191919;
+}
+@media screen and (max-width: 767px) {
+  .header-wrapper .hero-section .hero-content .hero-actions .btn-portfolio {
+    font-size: 0.875rem;
+  }
 }
 .header-wrapper .hero-section .hero-content .hero-actions .btn-portfolio:hover .bi-arrow-right {
   transform: translateX(0.5rem);
@@ -229,6 +262,11 @@
   line-height: 150%;
   color: #333333;
 }
+@media screen and (max-width: 767px) {
+  .header-wrapper .hero-section .hero-content .hero-stats .stat-item .stat-number {
+    font-size: 1.5rem;
+  }
+}
 .header-wrapper .hero-section .hero-content .hero-stats .stat-item .stat-number span {
   color: #5700FF;
 }
@@ -246,6 +284,9 @@
 }
 .header-wrapper .hero-section .hero-image img {
   border-bottom-left-radius: 1.875rem;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media screen and (max-width: 767px) {
@@ -255,25 +296,91 @@
   .mobile-nav {
     width: 100% !important;
   }
+  .hero-section {
+    padding: 0 1rem !important;
+  }
+  .hero-section .hero-content {
+    gap: 2.5rem !important;
+    margin-top: 1.875rem !important;
+  }
+  .hero-section .hero-content .hero-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .hero-section .hero-content .hero-intro .intro-description {
+    margin-bottom: 1.5rem !important;
+  }
+  .hero-section .hero-content .hero-intro .hero-actions {
+    gap: 1.25rem !important;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .branding-nav {
     padding: 1.25rem 2rem !important;
+  }
+  .hero-section {
+    padding: 0 2rem;
+  }
+  .hero-section .hero-content {
+    margin-top: 3.75rem !important;
   }
 }
 @media screen and (min-width: 1280px) and (max-width: 1440px) {
   .branding-nav {
     padding: 1.25rem 5rem !important;
   }
+  .hero-content {
+    padding-left: 5rem !important;
+  }
 }
 @media screen and (max-width: 1023px) {
   .header-wrapper {
     margin-bottom: 3.75rem;
   }
+  .hero-stats {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.625rem;
+    background-color: unset !important;
+    justify-content: unset !important;
+    padding: 0 !important;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+  }
+  .hero-stats .stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F7F6F3;
+    border-radius: 0.5rem;
+    padding: 1rem 1.125rem;
+  }
+  .hero-stats .stat-item:nth-child(1) {
+    grid-column: span 4;
+  }
+  .hero-stats .stat-item:nth-child(2) {
+    grid-column: span 2;
+  }
+  .hero-stats .stat-item:nth-child(3) {
+    grid-column: span 2;
+  }
 }
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
   .header-wrapper {
     margin-bottom: 6.25rem;
+  }
+}
+@media screen and (max-width: 1279px) {
+  .hero-section {
+    flex-direction: column-reverse;
+  }
+  .hero-section .hero-content {
+    padding: 0 !important;
+  }
+  .hero-section .hero-intro {
+    padding-right: 0 !important;
   }
 }
 @media screen and (max-width: 1439px) {
@@ -701,6 +808,12 @@
 .section-projects .view-projects-btn:hover, .section-projects .view-projects-btn:focus {
   background-color: #7833FF;
 }
+@media (max-width: 767px) {
+  .section-projects .view-projects-btn {
+    font-size: 0.875rem;
+    padding: 0.875rem 1rem;
+  }
+}
 .section-projects .view-projects-btn:hover .bi-arrow-right {
   transform: translateX(0.5rem);
 }
@@ -858,6 +971,12 @@
 }
 .section-faq .faq-wrapper .faq-extra .faq-contact-link:hover, .section-faq .faq-wrapper .faq-extra .faq-contact-link:focus {
   background-color: #7833FF;
+}
+@media (max-width: 767px) {
+  .section-faq .faq-wrapper .faq-extra .faq-contact-link {
+    font-size: 0.875rem;
+    padding: 0.875rem 1rem;
+  }
 }
 
 *, *::before, *::after {
