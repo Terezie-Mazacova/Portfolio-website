@@ -81,6 +81,11 @@
     &:focus {
         background-color: $peach-95;
     }
+
+    @media screen and (max-width: 576px) {
+        @include text-xsmall;
+        padding: .875rem;
+    }
 }
 
 @mixin btn-standard {
