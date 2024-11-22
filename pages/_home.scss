@@ -310,4 +310,56 @@
 }
 
 
+// == BREAKPOINTY ==
+@media screen and (max-width: 767px) {
+    // == SECTION CREATIVE SKILLS ==
+    .skills-cards {
+        grid-template-columns: repeat(1, 1fr) !important;
+
+        .skill-card {
+            padding: 2.5rem !important;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    // == SECTION CREATIVE SKILLS ==
+    .skills-cards {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+
+
+@media screen and (max-width: 1023px) {
+    // == SECTION CREATIVE SKILLS ==
+    .section-skills {
+        margin-bottom: 3.75rem;
+
+        .skills-header {
+            margin-bottom: 2.5rem;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+    // == SECTION CREATIVE SKILLS ==
+    .section-skills {
+        margin-bottom: 6.25rem;
+
+        .skills-header {
+            margin-bottom: 3.75rem;
+        }
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    // == SECTION CREATIVE SKILLS ==
+    .skills-header {
+        h2 {
+            margin-bottom: .125rem !important;
+        }
+    }
+}
+
 
