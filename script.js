@@ -13,26 +13,24 @@ hamburger.addEventListener('click', function() {
 document.addEventListener( 'DOMContentLoaded', function() {
     var splide = new Splide( '.splide',{
         perPage: 3,
-        gap: '20px',
+        gap: '30px',
+        pagination: false,
         arrows: true,
         type: 'loop',
         breakpoints: {
-            1200: {
-                perPage: 3,
-                gap: '15px',
-
-            },
-            992: {
+            //1200: {
+            //    perPage: 3,
+            //   gap: '15px',
+            //},
+            1280: {
                 perPage: 2,
-                gap: '10px',
+                gap: '20px',
 
                 
             },
-            768: {
+            1023: {
                 perPage: 1,
-                gap: '5px',
-
-            }
+            },
         }
     } );
     splide.mount();

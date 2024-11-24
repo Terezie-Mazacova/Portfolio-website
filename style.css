@@ -600,6 +600,11 @@
   line-height: 150%;
   color: #4C4C4C;
 }
+@media (max-width: 767px) {
+  .testimonials-section .splide__header .splide__reviews {
+    font-size: 1.125rem;
+  }
+}
 .testimonials-section .splide__header .splide__arrow--prev svg {
   transform: rotate(180deg);
 }
@@ -661,6 +666,7 @@
 .testimonials-section .testimonial-card .testimonial-meta .testimonial-social {
   display: flex;
   gap: 0.625rem;
+  margin-left: 1.25rem;
 }
 .testimonials-section .testimonial-card .testimonial-meta .testimonial-social .testimonial-social-link {
   padding: 0.75rem;
@@ -690,6 +696,49 @@
   }
 }
 
+@media screen and (max-width: 767px) {
+  .splide__header {
+    margin-bottom: 1.875rem !important;
+  }
+  .testimonial-card {
+    padding: 1.875rem !important;
+  }
+  .testimonial-card .testimonial-meta {
+    flex-direction: column;
+  }
+  .testimonial-card .testimonial-meta .testimonial-header {
+    text-align: center;
+    margin-bottom: 1.25rem;
+  }
+  .testimonial-card .testimonial-rating {
+    justify-content: center;
+    margin: 1.25rem 0 !important;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .testimonial-card {
+    padding: 2.1875rem !important;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .testimonials-section {
+    margin-bottom: 3.75rem;
+  }
+  .testimonials-section .header-testimonials {
+    margin-bottom: 2.5rem;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .testimonials-section {
+    margin-bottom: 6.25rem;
+  }
+  .testimonials-section .header-testimonials {
+    margin-bottom: 3.75rem;
+  }
+  .testimonials-section .testimonial-card {
+    padding: 2.5rem;
+  }
+}
 .section-skills {
   margin-bottom: 9.375rem;
 }
