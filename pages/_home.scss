@@ -68,6 +68,7 @@
 
         h2 {
             @include h2;
+            margin-bottom: .375rem;
         }
 
         p {
@@ -503,6 +504,7 @@
 
         .faq-wrapper {
             flex-direction: column;
+            gap: 1.875rem;
     
             .faq-container {
                 width: 100% !important;
@@ -579,6 +581,27 @@
 @media screen and (max-width: 1440px) {
     // == SECTION CREATIVE SKILLS ==
     .skills-header {
+        h2 {
+            margin-bottom: .125rem !important;
+        }
+    }
+
+    // == SECTION BENEFITS ==
+    .header-benefits {
+        h2 {
+            margin-bottom: .125rem !important;
+        }
+    }
+
+    // == SECTION MY WORKS ==
+    .projects-header {
+        h2 {
+            margin-bottom: .125rem !important;
+        }
+    }
+
+    // == TESTIMONIALS SECTION ==
+    .header-testimonials {
         h2 {
             margin-bottom: .125rem !important;
         }
