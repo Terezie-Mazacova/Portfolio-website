@@ -61,10 +61,18 @@
 
 @mixin text-medium-large {
     font-size: 1.5rem;
+
+    @media (max-width: 767px) {
+        @include text-medium;
+    }
 }
 
 @mixin text-large {
     font-size: 1.25rem;
+
+    @media (max-width: 767px) {
+        @include text-medium;
+    }
 }
 
 @mixin text-medium {

@@ -240,15 +240,21 @@
                 
         
                 .faq-toggle {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                     margin-left: 3.125rem;
                     border: 1px solid $peach-85;
                     background-color: unset;
                     border-radius: .375rem;
                     cursor: pointer;
                     padding: .375rem;
-                    height: 2.875rem;
-                    width: 2.875rem;
                     color: $grey-20;
+
+                    svg {
+                        width: 20px;
+                        height: 20px;
+                    }
                 }
             }
         
@@ -315,6 +321,20 @@
 
 
 // == BREAKPOINTY ==
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    // == SECTION FAQ == 
+    .faq-title {
+        padding-right: 60px !important;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+        // == SECTION FAQ == 
+        .faq-title {
+            padding-right: 80px !important;
+        }
+}
+
 @media screen and (max-width: 767px) {
     // == SECTION CREATIVE SKILLS ==
     .skills-cards {
@@ -358,6 +378,36 @@
             }
         }
     }
+
+    // == SECTION FAQ ==
+    .faq-container {
+        padding: 1.25rem !important;
+
+        .faq {
+            padding: 1.25rem !important;
+            margin-bottom: 1.25rem !important;
+            position: relative;
+
+            &:last-child {
+                margin-bottom: 0 !important;
+            }
+
+            .faq-toggle {
+                position: absolute;
+                top: 25%;
+                right: 8%;
+                padding: .25rem !important;
+            }
+
+            &.active .faq-toggle {
+                top: 10% !important;
+            }
+        }
+    }
+
+    .faq-extra {
+        padding: 1.875rem !important;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -389,7 +439,23 @@
 
     // == SECTION MY WORKS == 
     .project {
-        padding: 35px !important;
+        padding: 2.1875rem !important;
+    }
+
+    // == SECTION FAQ ==
+    .faq-container {
+        padding: 1.875rem !important;
+    }
+
+    .faq-extra {
+        padding: 2.1875rem !important;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+    // == SECTION FAQ ==
+    .faq {
+        padding: 1.5625rem !important;
     }
 }
 
@@ -424,6 +490,33 @@
 
         .projects-list {
             flex-direction: column;
+        }
+    }
+
+    // == SECTION FAQ ==
+    .section-faq {
+        margin-bottom: 3.75rem;
+
+        .faq-header {
+            margin-bottom: 2.5rem;
+        }
+
+        .faq-wrapper {
+            flex-direction: column;
+    
+            .faq-container {
+                width: 100% !important;
+            }
+    
+            .faq-extra {
+                align-items: center !important;
+                text-align: center;
+                width: 100% !important;
+    
+                .faq-contact-link {
+                    width: 100%;
+                }
+            }
         }
     }
 }
@@ -464,11 +557,35 @@
     .project {
         padding: 2.5rem !important;
     }
+
+    // == SECTION FAQ ==
+    .section-faq {
+        margin-bottom: 6.25rem;
+
+        .faq-header {
+            margin-bottom: 3.75rem;
+        }
+
+        .faq-container {
+            padding: 2.5rem !important;
+        }
+    
+        .faq-extra {
+            padding: 2.5rem !important;
+        }
+    }
 }
 
 @media screen and (max-width: 1440px) {
     // == SECTION CREATIVE SKILLS ==
     .skills-header {
+        h2 {
+            margin-bottom: .125rem !important;
+        }
+    }
+
+    // == SECTION FAQ ==
+    .faq-header {
         h2 {
             margin-bottom: .125rem !important;
         }
