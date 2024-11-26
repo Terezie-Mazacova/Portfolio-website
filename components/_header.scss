@@ -244,6 +244,85 @@
     }
 }
 
+
+// == SECTION INFORMATION SUBPAGE ==
+.section-information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2.5rem;
+    background-color: $peach-96;
+    border-radius: .75rem;
+    padding: 5rem 18.75rem;
+    margin-top: 6.25rem;
+
+    .section-header-icon {
+        color: $peach-95;
+        background-color: $purple-50;
+        box-shadow: inset 0 0 14px 4px rgba($white, 0.5);
+        padding: 1rem;
+        border-radius: .5rem;
+
+        .header-icon-stars {
+            width: 2.125rem;
+            height: 2.125rem;
+        }
+    }
+
+    .section-header {
+        h1 {
+            @include h1-small;
+            font-weight: 600;
+            line-height: $line-height;
+            color: $grey-20;
+            margin-bottom: .5rem;
+        }
+
+        p {
+            @include global-paragraph;
+        }
+    }
+
+    .stats-wrapper {
+        display: flex;
+        gap: 1.25rem;
+
+        .fact-item {
+            display: flex;
+            gap: .375rem;
+            align-items: center;
+            border: 1px solid $peach-90;
+            border-radius: .5rem;
+            padding: .75rem 1rem;
+
+            .fact-icon {
+                width: 2.125rem;
+                height: 2.125rem;
+                color: $purple-50;
+            }
+
+            p {
+                @include text-medium;
+                font-weight: 500;
+                line-height: $line-height;
+                color: $grey-20;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 // == BREAKPONTY ==
 @media screen and (max-width: 767px) {
     // == LOGO AND NAV ==
