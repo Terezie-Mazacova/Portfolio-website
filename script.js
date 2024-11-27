@@ -10,6 +10,7 @@ hamburger.addEventListener('click', function() {
 
 
 // == SLIDER ==
+/*
 document.addEventListener( 'DOMContentLoaded', function() {
     var splide = new Splide( '.splide',{
         perPage: 3,
@@ -18,10 +19,6 @@ document.addEventListener( 'DOMContentLoaded', function() {
         arrows: true,
         type: 'loop',
         breakpoints: {
-            //1200: {
-            //    perPage: 3,
-            //   gap: '15px',
-            //},
             1280: {
                 perPage: 2,
                 gap: '20px',
@@ -35,6 +32,34 @@ document.addEventListener( 'DOMContentLoaded', function() {
     } );
     splide.mount();
 });
+*/
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Vyhledání všech elementů s třídou .splide
+    const splides = document.querySelectorAll('.splide');
+
+    // Pro každý nalezený element vytvořte novou instanci Splide
+    splides.forEach(function (splideElement) {
+        new Splide(splideElement, {
+        perPage: 3,
+        gap: '30px',
+        pagination: false,
+        arrows: true,
+        type: 'loop',
+        breakpoints: {
+            1280: {
+            perPage: 2,
+            gap: '20px',
+            },
+            
+            1023: {
+            perPage: 1,
+            },
+        },
+        }).mount();
+    });
+});
+
 
 // == SECTION FAQ ==
 const toggles = document.querySelectorAll('.faq-toggle')
