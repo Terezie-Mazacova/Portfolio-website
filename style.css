@@ -786,7 +786,7 @@
 .section-sliders-projects {
   display: flex;
   flex-direction: column;
-  gap: 3.75rem;
+  gap: 6.25rem;
   margin-bottom: 9.375rem;
 }
 .section-sliders-projects .splide__reviews--portfolio {
@@ -858,6 +858,12 @@
   .testimonials-section .header-testimonials {
     margin-bottom: 2.5rem;
   }
+  .section-sliders-projects {
+    margin-bottom: 3.75rem;
+  }
+  .section-sliders-projects .project-card {
+    text-align: center;
+  }
 }
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
   .testimonials-section {
@@ -868,6 +874,14 @@
   }
   .testimonials-section .testimonial-card {
     padding: 2.5rem;
+  }
+  .section-sliders-projects {
+    margin-bottom: 6.25rem;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .section-sliders-projects {
+    gap: 3.75rem;
   }
 }
 .section-skills {
