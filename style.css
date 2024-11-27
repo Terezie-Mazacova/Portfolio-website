@@ -327,13 +327,14 @@
   margin-top: 6.25rem;
 }
 .section-information .section-header-icon {
+  display: flex;
   color: #F5F3F0;
   background-color: #5700FF;
   box-shadow: inset 0 0 14px 4px rgba(255, 255, 255, 0.5);
   padding: 1rem;
   border-radius: 0.5rem;
 }
-.section-information .section-header-icon .header-icon-stars {
+.section-information .section-header-icon .header-icon {
   width: 2.125rem;
   height: 2.125rem;
 }

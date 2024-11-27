@@ -258,13 +258,14 @@
     margin-top: 6.25rem;
     
     .section-header-icon {
+        display: flex;
         color: $peach-95;
         background-color: $purple-50;
         box-shadow: inset 0 0 14px 4px rgba($white, 0.5);
         padding: 1rem;
         border-radius: .5rem;
 
-        .header-icon-stars {
+        .header-icon {
             width: 2.125rem;
             height: 2.125rem;
         }
