@@ -273,10 +273,6 @@
     .section-header {
         h1 {
             @include h1-small;
-            font-weight: 600;
-            line-height: $line-height;
-            color: $grey-20;
-            margin-bottom: .5rem;
         }
 
         p {
@@ -311,14 +307,6 @@
         }
     }
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -359,6 +347,24 @@
             }
         }
     }
+
+    // == SECTION INFORMATION SUBPAGE ==
+    .section-information {
+        padding: 2.5rem 1.875rem;
+
+        .stats-wrapper {
+            flex-direction: column;
+            width: 100%;
+
+            .fact-item {
+                justify-content: center;
+
+                p {
+                    @include text-xsmall;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
@@ -375,20 +381,12 @@
             margin-top: 3.75rem !important;
         }
     }
-}
 
-@media screen and (min-width: 1280px) and (max-width: 1440px) {
-    // == LOGO AND NAV ==
-    .branding-nav {
-        padding: 1.25rem 5rem !important;
-    }
-
-    // == HERO CONTENT ==
-    .hero-content {
-        padding-left: 5rem !important;
+    // == SECTION INFORMATION SUBPAGE ==
+    .section-information {
+        padding: 60px;
     }
 }
-
 
 @media screen and (max-width: 1023px) {
     // == HEADER ==
@@ -430,12 +428,10 @@
             }
         }
     }
-}
 
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
-    // == HEADER ==
-    .header-wrapper {
-        margin-bottom: 6.25rem;
+    // == SECTION INFORMATION SUBPAGE ==
+    .section-information {
+        margin-top: 3.75rem;
     }
 }
 
@@ -453,6 +449,31 @@
         }
     }
 }
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+    // == HEADER ==
+    .header-wrapper {
+        margin-bottom: 6.25rem;
+    }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1440px) {
+    // == LOGO AND NAV ==
+    .branding-nav {
+        padding: 1.25rem 5rem !important;
+    }
+
+    // == HERO CONTENT ==
+    .hero-content {
+        padding-left: 5rem !important;
+    }
+
+    // == SECTION INFORMATION SUBPAGE ==
+    .section-information {
+        padding: 3.75rem 15.625rem;
+    }
+}
+
 
 
 

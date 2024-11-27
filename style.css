@@ -199,7 +199,6 @@
 @media (min-width: 768px) and (max-width: 1440px) {
   .header-wrapper .hero-section .hero-content .hero-intro h1 {
     font-size: 3rem;
-    line-height: 150%;
   }
 }
 .header-wrapper .hero-section .hero-content .hero-intro .intro-description {
@@ -342,9 +341,18 @@
   font-size: 3rem;
   line-height: 150%;
   font-weight: 600;
-  line-height: 150%;
   color: #333333;
   margin-bottom: 0.5rem;
+}
+@media screen and (max-width: 767px) {
+  .section-information .section-header h1 {
+    font-size: 1.75rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1440px) {
+  .section-information .section-header h1 {
+    font-size: 2.375rem;
+  }
 }
 .section-information .section-header p {
   font-size: 1.125rem;
@@ -407,6 +415,19 @@
   .hero-section .hero-content .hero-intro .hero-actions {
     gap: 1.25rem !important;
   }
+  .section-information {
+    padding: 2.5rem 1.875rem;
+  }
+  .section-information .stats-wrapper {
+    flex-direction: column;
+    width: 100%;
+  }
+  .section-information .stats-wrapper .fact-item {
+    justify-content: center;
+  }
+  .section-information .stats-wrapper .fact-item p {
+    font-size: 0.875rem;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .branding-nav {
@@ -418,13 +439,8 @@
   .hero-section .hero-content {
     margin-top: 3.75rem !important;
   }
-}
-@media screen and (min-width: 1280px) and (max-width: 1440px) {
-  .branding-nav {
-    padding: 1.25rem 5rem !important;
-  }
-  .hero-content {
-    padding-left: 5rem !important;
+  .section-information {
+    padding: 60px;
   }
 }
 @media screen and (max-width: 1023px) {
@@ -460,10 +476,8 @@
     grid-column: span 2;
     text-align: center;
   }
-}
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
-  .header-wrapper {
-    margin-bottom: 6.25rem;
+  .section-information {
+    margin-top: 3.75rem;
   }
 }
 @media screen and (max-width: 1279px) {
@@ -475,6 +489,22 @@
   }
   .hero-section .hero-intro {
     padding-right: 0 !important;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .header-wrapper {
+    margin-bottom: 6.25rem;
+  }
+}
+@media screen and (min-width: 1280px) and (max-width: 1440px) {
+  .branding-nav {
+    padding: 1.25rem 5rem !important;
+  }
+  .hero-content {
+    padding-left: 5rem !important;
+  }
+  .section-information {
+    padding: 3.75rem 15.625rem;
   }
 }
 @media screen and (max-width: 1439px) {
