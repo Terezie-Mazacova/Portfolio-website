@@ -1,0 +1,91 @@
+// == SECTION CONATCT ME ==
+.contact-summary {
+    display: flex;
+    flex-direction: column;
+    gap: 3.125rem;
+
+    .contact-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+    
+        .contact-card {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: $peach-96;
+            border-radius: .5rem;
+            padding: 1.5rem 1.875rem;
+            cursor: pointer;
+    
+            .contact-card-text {
+                font-style: normal;
+    
+                p {
+                    @include global-paragraph;
+                    margin-bottom: .25rem;
+                }
+    
+                .contact-detail-link {
+                    text-decoration: none;
+                    @include text-large;
+                    font-weight: 500;
+                    line-height: $line-height;
+                    color: $grey-20;
+                }
+            }
+    
+            .contact-card-icon {
+                display: flex;
+                padding: .625rem;
+                background-color: $peach-95;
+                border: .0625rem solid $peach-85;
+                border-radius: .5rem;
+    
+                .contact-icon-svg {
+                    width: 15px;
+                    height: 15px;
+                    color: $grey-20;
+                    transition: transform 0.3s ease;
+                }
+            }
+
+            &:hover .contact-icon-svg {
+                transform: translateX(3px);
+            }
+
+            &:hover .contact-detail-link {
+                text-decoration: underline;
+                text-underline-offset: .25rem;
+                text-decoration-color: $grey-30;
+            }
+        }
+    }
+
+    .social-links {
+        h2 {
+            @include h3-small;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+
+        .social-links-container {
+            display: flex;
+            background-color: $peach-96;
+            border-radius: .5rem;
+            padding: 1.25rem;
+
+            .social-link {
+                display: flex;
+                padding: .75rem;
+                background-color: $purple-50;
+                border-radius: .5rem;
+                box-shadow: inset 0 0 14px 4px rgba($white, 0.5);
+            }
+
+            .social-link--spaced {
+                margin: 0 1.25rem;
+            }
+        }
+    }
+}
