@@ -185,7 +185,52 @@
 
                     </div>
 
-                    <div></div>
+                    <form>
+                        <fieldset>
+                            <label for="first-name">First Name</label>
+                            <input type="text" id="first-name" placeholder="First Name" required>
+
+                            <label for="last-name">Last Name</label>
+                            <input type="text" id="last-name" placeholder="Last Name" required>
+
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="Email" required>
+
+                            <label for="phone-number">Phone Number</label>
+                            <input type="tel" id="phone-number" placeholder="Phone Number" required>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Why are you contacting us?</legend>
+
+                            <div>
+                                <div>
+                                    <input type="checkbox" id="web-design" name="web-design" value="web-design">
+                                    <label for="web-design">Web Design</label>
+                                </div>
+
+                                <div>
+                                    <input type="checkbox" id="colaboration" name="colaboration" value="Colaboration">
+                                    <label for="colaboration">Colaboration</label>
+                                </div>
+
+                                <div>
+                                    <input type="checkbox" id="app-design" name="app-design" value="app-design">
+                                    <label for="app-design">Mobile App Design</label>
+                                </div>
+
+                                <div>
+                                    <input type="checkbox" id="other" name="other" value="other">
+                                    <label for="other">Other</label>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="8" placeholder="Your Message here..." aria-label="Message" required></textarea>
+                        </fieldset>
+                    </form>
                 </div>
             </section>
         </div>
