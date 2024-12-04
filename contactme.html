@@ -182,54 +182,64 @@
                                 </a>
                             </div>
                         </div>
-
                     </div>
 
-                    <form>
-                        <fieldset>
-                            <label for="first-name">First Name</label>
-                            <input type="text" id="first-name" placeholder="First Name" required>
-
-                            <label for="last-name">Last Name</label>
-                            <input type="text" id="last-name" placeholder="Last Name" required>
-
-                            <label for="email">Email</label>
-                            <input type="email" id="email" placeholder="Email" required>
-
-                            <label for="phone-number">Phone Number</label>
-                            <input type="tel" id="phone-number" placeholder="Phone Number" required>
+                    <form class="contact-form">
+                        <fieldset class="personal-details">
+                            <div class="input-group">
+                                <label for="first-name" class="visually-hidden">First Name</label>
+                                <input type="text" id="first-name" placeholder="First Name" class="form-input" required>
+                            </div>
+                            
+                            <div class="input-group">
+                                <label for="last-name" class="visually-hidden">Last Name</label>
+                                <input type="text" id="last-name" placeholder="Last Name" class="form-input" required>
+                            </div>
+                            
+                            <div class="input-group">
+                                <label for="email" class="visually-hidden">Email</label>
+                                <input type="email" id="email" placeholder="Email" class="form-input" required>
+                            </div>
+                            
+                            <div class="input-group">
+                                <label for="phone-number" class="visually-hidden">Phone Number</label>
+                                <input type="tel" id="phone-number" placeholder="Phone Number" class="form-input" required>
+                            </div>
+                            
                         </fieldset>
 
-                        <fieldset>
-                            <legend>Why are you contacting us?</legend>
+                        <fieldset class="fieldset-contact-reason">
+                            <legend class="form-legend">Why are you contacting us?</legend>
 
-                            <div>
-                                <div>
+                            <div class="checkbox-group">
+                                <div class="checkbox-option">
                                     <input type="checkbox" id="web-design" name="web-design" value="web-design">
-                                    <label for="web-design">Web Design</label>
+                                    <label for="web-design" class="checkbox-label">Web Design</label>
                                 </div>
 
-                                <div>
+                                <div class="checkbox-option">
                                     <input type="checkbox" id="colaboration" name="colaboration" value="Colaboration">
-                                    <label for="colaboration">Colaboration</label>
+                                    <label for="colaboration" class="checkbox-label">Colaboration</label>
                                 </div>
 
-                                <div>
+                                <div class="checkbox-option">
                                     <input type="checkbox" id="app-design" name="app-design" value="app-design">
-                                    <label for="app-design">Mobile App Design</label>
+                                    <label for="app-design" class="checkbox-label">Mobile App Design</label>
                                 </div>
 
-                                <div>
+                                <div class="checkbox-option">
                                     <input type="checkbox" id="other" name="other" value="other">
-                                    <label for="other">Other</label>
+                                    <label for="other" class="checkbox-label">Other</label>
                                 </div>
                             </div>
                         </fieldset>
 
-                        <fieldset>
-                            <label for="message">Message</label>
+                        <fieldset class="form-message">
+                            <label for="message" class="visually-hidden">Message</label>
                             <textarea id="message" rows="8" placeholder="Your Message here..." aria-label="Message" required></textarea>
                         </fieldset>
+
+                        <button type="submit" class="form-btn">Send</button>
                     </form>
                 </div>
             </section>

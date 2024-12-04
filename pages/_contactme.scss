@@ -1,91 +1,264 @@
 // == SECTION CONATCT ME ==
-.contact-summary {
+.contact-section {
     display: flex;
-    flex-direction: column;
-    gap: 3.125rem;
+    gap: 3.75rem;
+    margin-bottom: 9.375rem;
 
-    .contact-cards {
+    .contact-summary {
         display: flex;
         flex-direction: column;
-        gap: 1.25rem;
+        gap: 3.125rem;
+        width: 40%;
     
-        .contact-card {
+        .contact-cards {
             display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: $peach-96;
-            border-radius: .5rem;
-            padding: 1.5rem 1.875rem;
-            cursor: pointer;
+            flex-direction: column;
+            gap: 1.25rem;
+        
+            .contact-card {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: $peach-96;
+                border-radius: .5rem;
+                padding: 1.5rem 1.875rem;
+                cursor: pointer;
+        
+                .contact-card-text {
+                    font-style: normal;
+        
+                    p {
+                        @include global-paragraph;
+                        margin-bottom: .25rem;
+                    }
+        
+                    .contact-detail-link {
+                        text-decoration: none;
+                        @include text-large;
+                        font-weight: 500;
+                        line-height: $line-height;
+                        color: $grey-20;
+                    }
+                }
+        
+                .contact-card-icon {
+                    display: flex;
+                    padding: .625rem;
+                    background-color: $peach-95;
+                    border: .0625rem solid $peach-85;
+                    border-radius: .5rem;
+        
+                    .contact-icon-svg {
+                        width: 15px;
+                        height: 15px;
+                        color: $grey-20;
+                        transition: transform 0.3s ease;
+                    }
+                }
     
-            .contact-card-text {
-                font-style: normal;
+                &:hover .contact-icon-svg {
+                    transform: translateX(3px);
+                }
     
-                p {
+                &:hover .contact-detail-link {
+                    text-decoration: underline;
+                    text-underline-offset: .25rem;
+                    text-decoration-color: $grey-30;
+                }
+            }
+        }
+    
+        .social-links {
+            h2 {
+                @include h3-small;
+                font-weight: 500;
+                margin-bottom: 1rem;
+            }
+    
+            .social-links-container {
+                display: flex;
+                background-color: $peach-96;
+                border-radius: .5rem;
+                padding: 1.25rem;
+                max-width: 14rem;
+    
+                .social-link {
+                    display: flex;
+                    padding: .75rem;
+                    background-color: $purple-50;
+                    border-radius: .5rem;
+                    box-shadow: inset 0 0 14px 4px rgba($white, 0.5);
+                }
+    
+                .social-link--spaced {
+                    margin: 0 1.25rem;
+                }
+            }
+        }
+    }
+
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5rem;
+        background-color: $peach-96;
+        border-radius: .75rem;
+        width: 60%;
+
+        .personal-details {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.25rem;
+            border: none;
+
+            .input-group {                
+                .form-input {
+                    padding: 1.5rem 2.5rem;
+                    background-color: $peach-95;
+                    border: 1px solid $peach-90;
+                    border-radius: .5rem;
+                    width: 100%;
+                    appearance: auto;
+
+                    &,
+                    &:focus,
+                    &:active {
+                        font-family: "Manrope", sans-serif;
+                        @include global-paragraph;
+                        @include text-small;
+                        outline: none;
+                    }
+                }
+
+                ::placeholder {
                     @include global-paragraph;
-                    margin-bottom: .25rem;
-                }
-    
-                .contact-detail-link {
-                    text-decoration: none;
-                    @include text-large;
-                    font-weight: 500;
-                    line-height: $line-height;
-                    color: $grey-20;
                 }
             }
-    
-            .contact-card-icon {
-                display: flex;
-                padding: .625rem;
+        }
+
+        .fieldset-contact-reason {
+            padding: 4.1875rem 2.5rem 2.5rem 2.5rem;
+            background-color: $peach-95;
+            border: 1px solid $peach-90;
+            border-radius: .75rem;
+            position: relative;
+            margin: 2.5rem 0;
+
+            .form-legend {
+                position: absolute;
+                top: 2.5rem;
+                margin: 0;
+                padding: 0;
+                @include text-medium;
+                font-weight: 500;
+                line-height: $line-height;
+                color: $grey-20;
+            }
+
+            .checkbox-group {
+                margin-top: 2.5rem;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.25rem;
+
+                .checkbox-option {
+                    .checkbox-label {
+                        @include global-paragraph;
+                    }
+
+                    input[type="checkbox"] {
+                        display: none;
+                    }
+
+                    input[type="checkbox"] + label {
+                        position: relative;
+                        padding-left: 3.125rem;
+                        cursor: pointer;
+                    }
+                    
+                    input[type="checkbox"] + label::before {
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        top: -0.125rem;
+                        width: 1.75rem;
+                        height: 1.75rem;
+                        background-color: $peach-92;
+                        border: 1px solid $peach-90;
+                        border-radius: .25rem;
+                        transition: background-color 0.3s;
+                    }
+                    
+                    input[type="checkbox"]:checked + label::before {
+                        background-color: $purple-50;
+                    }
+                    
+                    input[type="checkbox"]:checked + label::after {
+                        content: '';
+                        position: absolute;
+                        left: .625rem;
+                        top: .25rem;
+                        width: .5rem;
+                        height: .75rem;
+                        border: solid $white;
+                        border-width: 0 .1875rem .1875rem 0;
+                        transform: rotate(45deg);
+                    }
+                }
+            }
+        }
+
+        .form-message {
+            border: none;
+            
+            textarea {
+                padding: 2.5rem;
+                width: 100%;
+                height: 204px;
                 background-color: $peach-95;
-                border: .0625rem solid $peach-85;
+                border: 1px solid $peach-90;
                 border-radius: .5rem;
-    
-                .contact-icon-svg {
-                    width: 15px;
-                    height: 15px;
-                    color: $grey-20;
-                    transition: transform 0.3s ease;
+                margin-bottom: 2.5rem;
+
+                ::placeholder {
+                    @include global-paragraph;
+                }
+
+                &,
+                &:focus {
+                    font-family: "Manrope", sans-serif;
+                    @include global-paragraph;
+                    @include text-small;
+                    outline: none;
                 }
             }
-
-            &:hover .contact-icon-svg {
-                transform: translateX(3px);
-            }
-
-            &:hover .contact-detail-link {
-                text-decoration: underline;
-                text-underline-offset: .25rem;
-                text-decoration-color: $grey-30;
-            }
-        }
-    }
-
-    .social-links {
-        h2 {
-            @include h3-small;
-            font-weight: 500;
-            margin-bottom: 1rem;
         }
 
-        .social-links-container {
-            display: flex;
-            background-color: $peach-96;
+        .form-btn {
+            width: 8.25rem;
+            margin: 0 auto;
+            background-color: $purple-50;
+            border: none;
             border-radius: .5rem;
-            padding: 1.25rem;
+            padding: 1.125rem 2.75rem;
+            @include text-medium;
+            font-weight: 500;
+            line-height: $line-height;
+            color: $white;
+            transition: background-color 0.3s;
+            cursor: pointer;
 
-            .social-link {
-                display: flex;
-                padding: .75rem;
-                background-color: $purple-50;
-                border-radius: .5rem;
-                box-shadow: inset 0 0 14px 4px rgba($white, 0.5);
-            }
-
-            .social-link--spaced {
-                margin: 0 1.25rem;
+            &:hover,
+            &:focus {
+                background-color: $purple-60;
             }
         }
     }
+}
+
+
+// == HIDDEN LABEL ==
+.visually-hidden {
+    display: none;
 }
