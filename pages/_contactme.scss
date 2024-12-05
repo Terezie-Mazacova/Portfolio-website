@@ -238,21 +238,10 @@
         .form-btn {
             width: 8.25rem;
             margin: 0 auto;
-            background-color: $purple-50;
             border: none;
-            border-radius: .5rem;
             padding: 1.125rem 2.75rem;
-            @include text-medium;
-            font-weight: 500;
-            line-height: $line-height;
-            color: $white;
-            transition: background-color 0.3s;
+            @include btn-standard;
             cursor: pointer;
-
-            &:hover,
-            &:focus {
-                background-color: $purple-60;
-            }
         }
     }
 }
@@ -261,4 +250,153 @@
 // == HIDDEN LABEL ==
 .visually-hidden {
     display: none;
+}
+
+
+// == BREAKPOINTY ==
+@media screen and (max-width: 767px) {
+    .contact-section {
+        .contact-summary {
+            .contact-cards {
+                .contact-card {
+                    .contact-card-text {
+                        .contact-detail-link {
+                            @include text-small;
+                        }
+                    }
+                }
+            }
+        } 
+
+
+        .contact-form {
+            padding: 1.5rem !important;
+
+            .fieldset-contact-reason {
+                padding: 3rem 1.5rem 1.5rem 1.5rem;
+                margin: 1.5rem 0;
+
+                .form-legend {
+                    @include text-small;
+                    top: 1.5rem;
+                }
+
+                .checkbox-group {
+                    grid-template-columns: repeat(1, 1fr);
+                    margin-top: 1.5rem;
+
+                    input[type="checkbox"] + label::before {
+                        top: -0.25rem !important;
+                    }
+
+                    input[type="checkbox"]:checked + label::after {
+                        top: .125rem !important;
+                    }
+                }
+            }
+
+            .form-message {
+                textarea {
+                    padding: 1.5rem;
+                    margin-bottom: 1.5rem;
+                }
+            }
+        }
+
+        .form-btn {
+            width: 100% !important;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .contact-form {
+        padding: 2.1875rem !important;
+
+        .fieldset-contact-reason {
+            margin: 1.875rem 0 !important;
+
+            .checkbox-group {
+                margin-top: 1.875rem !important;
+            }
+        }
+
+        .form-message {
+            textarea {
+                padding: 1.875rem !important;
+                margin-bottom: 1.875rem !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .contact-section {
+        margin-bottom: 3.75rem;
+        gap: 2.5rem;
+
+        .personal-details {
+            grid-template-columns: repeat(1, 1fr) !important;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+    .contact-section {
+        margin-bottom: 6.25rem;
+
+        .contact-form {
+            padding: 3.125rem;
+
+            .fieldset-contact-reason {
+                margin: 2.1875rem 0;
+
+                .checkbox-group {
+                    margin-top: 2.1875rem !important;
+                }
+            }
+
+            .form-message {
+                textarea {
+                    padding: 2.1875rem;
+                    margin-bottom: 2.1875rem;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 1439px) {
+    .contact-section {
+        flex-direction: column-reverse;
+
+        .contact-summary {
+            width: 100%;
+
+            .social-links {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        .contact-form {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .contact-summary {
+        gap: 1.875rem !important;
+
+        .contact-card {
+            padding: 1.25rem 1.5rem !important;
+        }
+    }
+    
+    .form-input {
+        padding: 1.25rem 1.5rem !important;
+    }
 }

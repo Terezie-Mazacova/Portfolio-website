@@ -1816,25 +1816,134 @@
 .contact-section .contact-form .form-btn {
   width: 8.25rem;
   margin: 0 auto;
-  background-color: #5700FF;
   border: none;
-  border-radius: 0.5rem;
   padding: 1.125rem 2.75rem;
   font-size: 1.125rem;
   font-weight: 500;
   line-height: 150%;
-  color: #ffffff;
+  color: #FDFDFC;
+  background-color: #5700FF;
+  border-radius: 0.5rem;
+  text-decoration: none;
   transition: background-color 0.3s;
   cursor: pointer;
 }
 .contact-section .contact-form .form-btn:hover, .contact-section .contact-form .form-btn:focus {
   background-color: #7833FF;
 }
+@media (max-width: 767px) {
+  .contact-section .contact-form .form-btn {
+    font-size: 0.875rem;
+    padding: 0.875rem 1rem;
+  }
+}
 
 .visually-hidden {
   display: none;
 }
 
+@media screen and (max-width: 767px) {
+  .contact-section .contact-summary .contact-cards .contact-card .contact-card-text .contact-detail-link {
+    font-size: 1rem;
+  }
+  .contact-section .contact-form {
+    padding: 1.5rem !important;
+  }
+  .contact-section .contact-form .fieldset-contact-reason {
+    padding: 3rem 1.5rem 1.5rem 1.5rem;
+    margin: 1.5rem 0;
+  }
+  .contact-section .contact-form .fieldset-contact-reason .form-legend {
+    font-size: 1rem;
+    top: 1.5rem;
+  }
+  .contact-section .contact-form .fieldset-contact-reason .checkbox-group {
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 1.5rem;
+  }
+  .contact-section .contact-form .fieldset-contact-reason .checkbox-group input[type=checkbox] + label::before {
+    top: -0.25rem !important;
+  }
+  .contact-section .contact-form .fieldset-contact-reason .checkbox-group input[type=checkbox]:checked + label::after {
+    top: 0.125rem !important;
+  }
+  .contact-section .contact-form .form-message textarea {
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .contact-section .form-btn {
+    width: 100% !important;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .contact-form {
+    padding: 2.1875rem !important;
+  }
+  .contact-form .fieldset-contact-reason {
+    margin: 1.875rem 0 !important;
+  }
+  .contact-form .fieldset-contact-reason .checkbox-group {
+    margin-top: 1.875rem !important;
+  }
+  .contact-form .form-message textarea {
+    padding: 1.875rem !important;
+    margin-bottom: 1.875rem !important;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .contact-section {
+    margin-bottom: 3.75rem;
+    gap: 2.5rem;
+  }
+  .contact-section .personal-details {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .contact-section {
+    margin-bottom: 6.25rem;
+  }
+  .contact-section .contact-form {
+    padding: 3.125rem;
+  }
+  .contact-section .contact-form .fieldset-contact-reason {
+    margin: 2.1875rem 0;
+  }
+  .contact-section .contact-form .fieldset-contact-reason .checkbox-group {
+    margin-top: 2.1875rem !important;
+  }
+  .contact-section .contact-form .form-message textarea {
+    padding: 2.1875rem;
+    margin-bottom: 2.1875rem;
+  }
+}
+@media screen and (max-width: 1439px) {
+  .contact-section {
+    flex-direction: column-reverse;
+  }
+  .contact-section .contact-summary {
+    width: 100%;
+  }
+  .contact-section .contact-summary .social-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-section .contact-form {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .contact-summary {
+    gap: 1.875rem !important;
+  }
+  .contact-summary .contact-card {
+    padding: 1.25rem 1.5rem !important;
+  }
+  .form-input {
+    padding: 1.25rem 1.5rem !important;
+  }
+}
 *, *::before, *::after {
   padding: 0;
   margin: 0;
