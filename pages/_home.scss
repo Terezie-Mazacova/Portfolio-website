@@ -30,7 +30,7 @@
                 background-color: $purple-50;
                 padding: 1rem;
                 border-radius: .5rem;
-                box-shadow: inset 0 0 14px 4px rgba($white, 0.5);
+                box-shadow: $box-shadow;
                 margin: 0 auto 1.875rem auto;
                 width: 4.8125rem;
                 height: 4.8125rem;
@@ -286,7 +286,7 @@
 
             .faq-icon-container {
                 background-color: $purple-50;
-                box-shadow: inset 0 0 14px 4px rgba($white, 0.5);
+                box-shadow: $box-shadow;
                 padding: 1rem;
                 border-radius: .5rem;
                 
