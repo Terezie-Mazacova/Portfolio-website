@@ -118,10 +118,10 @@
     }
 
     // == HERO SECTION ==
-    .hero-section {
+    .hero {
         display: flex;
 
-        .hero-content {
+        .hero__content {
             display: flex;
             gap: 5rem;
             flex-direction: column;
@@ -130,10 +130,10 @@
             max-width: 120rem;
             margin: 0 auto;
 
-            .hero-intro {
+            .hero__intro {
                 padding-right: 9.75rem;
 
-                .intro-greeting {
+                .intro__greeting {
                     @include text-xlarge;
                     font-weight: 500;
                     line-height: $line-height;
@@ -157,13 +157,13 @@
                     margin-bottom: .625rem;
                 }
 
-                .intro-description {
+                .intro__description {
                     @include global-paragraph;
                     margin-bottom: 3.125rem;
                 }
             }
 
-            .hero-actions {
+            .hero__actions {
                 display: flex;
                 gap: 2.5rem;
                 align-items: center;
@@ -201,7 +201,7 @@
                 }
             }
 
-            .hero-stats {
+            .hero__stats {
                 display: flex;
                 justify-content: space-around;
                 background-color: $peach-96;
@@ -209,8 +209,8 @@
                 border-top-left-radius: .75rem;
                 border-bottom-left-radius: .75rem;
 
-                .stat-item {
-                    .stat-number {
+                .hero__stat {
+                    .hero__stat-number {
                         @include h2;
                         font-weight: 700;
                         line-height: $line-height;
@@ -225,7 +225,7 @@
                         }
                     }
 
-                    .stat-description {
+                    .hero__stat-description {
                         @include global-paragraph;
                         font-weight: 500;
                         
@@ -234,7 +234,7 @@
             }
         }
 
-        .hero-image {
+        .hero__image {
             img {
                 border-bottom-left-radius: 1.875rem;
                 width: 100%;
@@ -243,6 +243,9 @@
         }
     }
 }
+
+// == SECTION HERO SUBPAGE ABOUT ==
+
 
 
 // == SECTION INFORMATION SUBPAGE ==

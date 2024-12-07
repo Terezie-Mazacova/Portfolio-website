@@ -152,10 +152,10 @@
     padding: 0.875rem;
   }
 }
-.header-wrapper .hero-section {
+.header-wrapper .hero {
   display: flex;
 }
-.header-wrapper .hero-section .hero-content {
+.header-wrapper .hero .hero__content {
   display: flex;
   gap: 5rem;
   flex-direction: column;
@@ -164,10 +164,10 @@
   max-width: 120rem;
   margin: 0 auto;
 }
-.header-wrapper .hero-section .hero-content .hero-intro {
+.header-wrapper .hero .hero__content .hero__intro {
   padding-right: 9.75rem;
 }
-.header-wrapper .hero-section .hero-content .hero-intro .intro-greeting {
+.header-wrapper .hero .hero__content .hero__intro .intro__greeting {
   font-size: 1.75rem;
   font-weight: 500;
   line-height: 150%;
@@ -180,11 +180,11 @@
   margin-bottom: 1.25rem;
 }
 @media screen and (max-width: 767px) {
-  .header-wrapper .hero-section .hero-content .hero-intro .intro-greeting {
+  .header-wrapper .hero .hero__content .hero__intro .intro__greeting {
     font-size: 1.125rem;
   }
 }
-.header-wrapper .hero-section .hero-content .hero-intro h1 {
+.header-wrapper .hero .hero__content .hero__intro h1 {
   font-size: 3.625rem;
   line-height: 150%;
   font-weight: 600;
@@ -192,16 +192,16 @@
   margin-bottom: 0.625rem;
 }
 @media (max-width: 767px) {
-  .header-wrapper .hero-section .hero-content .hero-intro h1 {
+  .header-wrapper .hero .hero__content .hero__intro h1 {
     font-size: 2.375rem;
   }
 }
 @media (min-width: 768px) and (max-width: 1440px) {
-  .header-wrapper .hero-section .hero-content .hero-intro h1 {
+  .header-wrapper .hero .hero__content .hero__intro h1 {
     font-size: 3rem;
   }
 }
-.header-wrapper .hero-section .hero-content .hero-intro .intro-description {
+.header-wrapper .hero .hero__content .hero__intro .intro__description {
   font-size: 1.125rem;
   font-weight: 400;
   line-height: 150%;
@@ -209,16 +209,16 @@
   margin-bottom: 3.125rem;
 }
 @media (max-width: 767px) {
-  .header-wrapper .hero-section .hero-content .hero-intro .intro-description {
+  .header-wrapper .hero .hero__content .hero__intro .intro__description {
     font-size: 0.875rem;
   }
 }
-.header-wrapper .hero-section .hero-content .hero-actions {
+.header-wrapper .hero .hero__content .hero__actions {
   display: flex;
   gap: 2.5rem;
   align-items: center;
 }
-.header-wrapper .hero-section .hero-content .hero-actions .btn-book-call {
+.header-wrapper .hero .hero__content .hero__actions .btn-book-call {
   display: flex;
   font-size: 1.125rem;
   font-weight: 500;
@@ -230,19 +230,19 @@
   transition: background-color 0.3s;
   padding: 1.125rem 1.5rem;
 }
-.header-wrapper .hero-section .hero-content .hero-actions .btn-book-call:hover, .header-wrapper .hero-section .hero-content .hero-actions .btn-book-call:focus {
+.header-wrapper .hero .hero__content .hero__actions .btn-book-call:hover, .header-wrapper .hero .hero__content .hero__actions .btn-book-call:focus {
   background-color: #7833FF;
 }
 @media (max-width: 767px) {
-  .header-wrapper .hero-section .hero-content .hero-actions .btn-book-call {
+  .header-wrapper .hero .hero__content .hero__actions .btn-book-call {
     font-size: 0.875rem;
     padding: 0.875rem 1rem;
   }
 }
-.header-wrapper .hero-section .hero-content .hero-actions .btn-book-call .bi-telephone-fill {
+.header-wrapper .hero .hero__content .hero__actions .btn-book-call .bi-telephone-fill {
   margin-right: 0.5rem;
 }
-.header-wrapper .hero-section .hero-content .hero-actions .btn-portfolio {
+.header-wrapper .hero .hero__content .hero__actions .btn-portfolio {
   font-size: 1.125rem;
   text-decoration: none;
   font-weight: 500;
@@ -250,18 +250,18 @@
   color: #191919;
 }
 @media screen and (max-width: 767px) {
-  .header-wrapper .hero-section .hero-content .hero-actions .btn-portfolio {
+  .header-wrapper .hero .hero__content .hero__actions .btn-portfolio {
     font-size: 0.875rem;
   }
 }
-.header-wrapper .hero-section .hero-content .hero-actions .btn-portfolio:hover .bi-arrow-right {
+.header-wrapper .hero .hero__content .hero__actions .btn-portfolio:hover .bi-arrow-right {
   transform: translateX(0.5rem);
 }
-.header-wrapper .hero-section .hero-content .hero-actions .btn-portfolio .bi-arrow-right {
+.header-wrapper .hero .hero__content .hero__actions .btn-portfolio .bi-arrow-right {
   display: inline-block;
   transition: transform 0.3s ease;
 }
-.header-wrapper .hero-section .hero-content .hero-stats {
+.header-wrapper .hero .hero__content .hero__stats {
   display: flex;
   justify-content: space-around;
   background-color: #F7F6F3;
@@ -269,7 +269,7 @@
   border-top-left-radius: 0.75rem;
   border-bottom-left-radius: 0.75rem;
 }
-.header-wrapper .hero-section .hero-content .hero-stats .stat-item .stat-number {
+.header-wrapper .hero .hero__content .hero__stats .hero__stat .hero__stat-number {
   font-size: 3rem;
   line-height: 150%;
   font-weight: 600;
@@ -279,24 +279,24 @@
   color: #333333;
 }
 @media (max-width: 767px) {
-  .header-wrapper .hero-section .hero-content .hero-stats .stat-item .stat-number {
+  .header-wrapper .hero .hero__content .hero__stats .hero__stat .hero__stat-number {
     font-size: 1.75rem;
   }
 }
 @media screen and (max-width: 767px) {
-  .header-wrapper .hero-section .hero-content .hero-stats .stat-item .stat-number {
+  .header-wrapper .hero .hero__content .hero__stats .hero__stat .hero__stat-number {
     font-size: 1.5rem;
   }
 }
 @media screen and (max-width: 767px) and (max-width: 767px) {
-  .header-wrapper .hero-section .hero-content .hero-stats .stat-item .stat-number {
+  .header-wrapper .hero .hero__content .hero__stats .hero__stat .hero__stat-number {
     font-size: 1.125rem;
   }
 }
-.header-wrapper .hero-section .hero-content .hero-stats .stat-item .stat-number span {
+.header-wrapper .hero .hero__content .hero__stats .hero__stat .hero__stat-number span {
   color: #5700FF;
 }
-.header-wrapper .hero-section .hero-content .hero-stats .stat-item .stat-description {
+.header-wrapper .hero .hero__content .hero__stats .hero__stat .hero__stat-description {
   font-size: 1.125rem;
   font-weight: 400;
   line-height: 150%;
@@ -304,11 +304,11 @@
   font-weight: 500;
 }
 @media (max-width: 767px) {
-  .header-wrapper .hero-section .hero-content .hero-stats .stat-item .stat-description {
+  .header-wrapper .hero .hero__content .hero__stats .hero__stat .hero__stat-description {
     font-size: 0.875rem;
   }
 }
-.header-wrapper .hero-section .hero-image img {
+.header-wrapper .hero .hero__image img {
   border-bottom-left-radius: 1.875rem;
   width: 100%;
   -o-object-fit: cover;
