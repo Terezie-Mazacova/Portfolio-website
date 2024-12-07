@@ -127,8 +127,6 @@
             flex-direction: column;
             justify-content: center;
             padding: 1.875rem  0 0 10.125rem;
-            max-width: 120rem;
-            margin: 0 auto;
 
             .hero__intro {
                 padding-right: 9.75rem;
@@ -245,7 +243,44 @@
 }
 
 // == SECTION HERO SUBPAGE ABOUT ==
+.hero--about {
+    flex-direction: row-reverse;
+    gap: 5rem;
+    max-width: 120rem;
+    margin: 9.375rem auto 0 auto;
+    padding: 0 10.125rem;
 
+    .hero__content--about {
+        width: 50%;
+        padding: 0 !important;
+        gap: 3.75rem !important;
+
+        .hero__intro--about {
+            padding: 0 !important;
+    
+            .intro__greeting--about {
+                max-width: 41.6875rem !important;
+    
+            }
+    
+            .intro__description--about {
+                margin-bottom: 0 !important;
+            }
+        }
+
+        .hero__stats--about {
+            background-color: transparent !important;
+            border-top: 1px solid $purple-50;
+            border-bottom: 1px solid $purple-50;
+            border-radius: 0 !important;
+            padding: 1.25rem 0 !important;
+        }
+    }
+
+    .hero__image--about {
+        width: 50%;
+    }
+}
 
 
 // == SECTION INFORMATION SUBPAGE ==
@@ -328,24 +363,24 @@
     }
 
     // == HERO CONTENT == 
-    .hero-section {
+    .hero {
         padding: 0 1rem !important;
 
-        .hero-content {
+        .hero__content {
             gap: 2.5rem !important;
             margin-top: 1.875rem !important;
 
-            .hero-intro {
+            .hero__intro {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 text-align: center;
 
-                .intro-description {
+                .intro__description {
                     margin-bottom: 1.5rem !important;
                 }
 
-                .hero-actions {
+                .hero__actions {
                     gap: 1.25rem !important;
                 }
             }
@@ -378,10 +413,10 @@
     }
 
     // == HERO CONTENT ==
-    .hero-section {
+    .hero {
         padding: 0 2rem;
 
-        .hero-content {
+        .hero__content {
             margin-top: 3.75rem !important;
         }
     }
@@ -399,7 +434,7 @@
     }
 
     // == HERO CONTENT == 
-    .hero-stats {
+    .hero__stats {
         display: grid !important;
         grid-template-columns: repeat(4, 1fr);
         gap: .625rem;
@@ -409,7 +444,7 @@
         border-top-left-radius: 0 !important;
         border-bottom-left-radius: 0 !important;
 
-        .stat-item {
+        .hero__stat {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -441,14 +476,14 @@
 
 @media screen and (max-width: 1279px) {
     // == HERO CONTENT ==
-    .hero-section {
+    .hero {
         flex-direction: column-reverse;
 
-        .hero-content {
+        .hero__content {
             padding: 0 !important;
         }
 
-        .hero-intro {
+        .hero__intro {
             padding-right: 0 !important;
         }
     }
@@ -468,7 +503,7 @@
     }
 
     // == HERO CONTENT ==
-    .hero-content {
+    .hero__content {
         padding-left: 5rem !important;
     }
 

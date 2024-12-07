@@ -161,8 +161,6 @@
   flex-direction: column;
   justify-content: center;
   padding: 1.875rem 0 0 10.125rem;
-  max-width: 120rem;
-  margin: 0 auto;
 }
 .header-wrapper .hero .hero__content .hero__intro {
   padding-right: 9.75rem;
@@ -315,6 +313,38 @@
      object-fit: cover;
 }
 
+.hero--about {
+  flex-direction: row-reverse;
+  gap: 5rem;
+  max-width: 120rem;
+  margin: 9.375rem auto 0 auto;
+  padding: 0 10.125rem;
+}
+.hero--about .hero__content--about {
+  width: 50%;
+  padding: 0 !important;
+  gap: 3.75rem !important;
+}
+.hero--about .hero__content--about .hero__intro--about {
+  padding: 0 !important;
+}
+.hero--about .hero__content--about .hero__intro--about .intro__greeting--about {
+  max-width: 41.6875rem !important;
+}
+.hero--about .hero__content--about .hero__intro--about .intro__description--about {
+  margin-bottom: 0 !important;
+}
+.hero--about .hero__content--about .hero__stats--about {
+  background-color: transparent !important;
+  border-top: 1px solid #5700FF;
+  border-bottom: 1px solid #5700FF;
+  border-radius: 0 !important;
+  padding: 1.25rem 0 !important;
+}
+.hero--about .hero__image--about {
+  width: 50%;
+}
+
 .section-information {
   display: flex;
   flex-direction: column;
@@ -397,23 +427,23 @@
   .mobile-nav {
     width: 100% !important;
   }
-  .hero-section {
+  .hero {
     padding: 0 1rem !important;
   }
-  .hero-section .hero-content {
+  .hero .hero__content {
     gap: 2.5rem !important;
     margin-top: 1.875rem !important;
   }
-  .hero-section .hero-content .hero-intro {
+  .hero .hero__content .hero__intro {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
-  .hero-section .hero-content .hero-intro .intro-description {
+  .hero .hero__content .hero__intro .intro__description {
     margin-bottom: 1.5rem !important;
   }
-  .hero-section .hero-content .hero-intro .hero-actions {
+  .hero .hero__content .hero__intro .hero__actions {
     gap: 1.25rem !important;
   }
   .section-information {
@@ -434,10 +464,10 @@
   .branding-nav {
     padding: 1.25rem 2rem !important;
   }
-  .hero-section {
+  .hero {
     padding: 0 2rem;
   }
-  .hero-section .hero-content {
+  .hero .hero__content {
     margin-top: 3.75rem !important;
   }
   .section-information {
@@ -448,7 +478,7 @@
   .header-wrapper {
     margin-bottom: 3.75rem;
   }
-  .hero-stats {
+  .hero__stats {
     display: grid !important;
     grid-template-columns: repeat(4, 1fr);
     gap: 0.625rem;
@@ -458,7 +488,7 @@
     border-top-left-radius: 0 !important;
     border-bottom-left-radius: 0 !important;
   }
-  .hero-stats .stat-item {
+  .hero__stats .hero__stat {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -466,14 +496,14 @@
     border-radius: 0.5rem;
     padding: 1rem 1.125rem;
   }
-  .hero-stats .stat-item:nth-child(1) {
+  .hero__stats .hero__stat:nth-child(1) {
     grid-column: span 4;
   }
-  .hero-stats .stat-item:nth-child(2) {
+  .hero__stats .hero__stat:nth-child(2) {
     grid-column: span 2;
     text-align: center;
   }
-  .hero-stats .stat-item:nth-child(3) {
+  .hero__stats .hero__stat:nth-child(3) {
     grid-column: span 2;
     text-align: center;
   }
@@ -482,13 +512,13 @@
   }
 }
 @media screen and (max-width: 1279px) {
-  .hero-section {
+  .hero {
     flex-direction: column-reverse;
   }
-  .hero-section .hero-content {
+  .hero .hero__content {
     padding: 0 !important;
   }
-  .hero-section .hero-intro {
+  .hero .hero__intro {
     padding-right: 0 !important;
   }
 }
@@ -501,7 +531,7 @@
   .branding-nav {
     padding: 1.25rem 5rem !important;
   }
-  .hero-content {
+  .hero__content {
     padding-left: 5rem !important;
   }
   .section-information {
