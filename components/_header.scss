@@ -259,8 +259,8 @@
             padding: 0 !important;
     
             .intro__greeting--about {
-                max-width: 41.6875rem !important;
-    
+                max-width: 579px !important;
+                white-space: unset !important;
             }
     
             .intro__description--about {
@@ -387,6 +387,11 @@
         }
     }
 
+    // == HERO SECTION - SUBPAGE ABOUT ==
+    .intro__description--about {
+        margin-bottom: unset !important;
+    }
+
     // == SECTION INFORMATION SUBPAGE ==
     .section-information {
         padding: 2.5rem 1.875rem;
@@ -468,6 +473,18 @@
         }
     }
 
+    // == HERO SECTION - SUBPAGE ABOUT ==
+    .hero--about {
+        margin-top: 0;
+        gap: 2.5rem;
+
+        .hero__content--about {
+            .hero__stats--about {
+                border: none !important;
+            }
+        }
+    }
+
     // == SECTION INFORMATION SUBPAGE ==
     .section-information {
         margin-top: 3.75rem;
@@ -487,12 +504,31 @@
             padding-right: 0 !important;
         }
     }
+
+
+    // == HERO SECTION - SUBPAGE ABOUT ==
+    .hero--about {
+        .hero__content--about {
+            margin-top: 0 !important;
+            width: 100% !important;
+        }
+    }
+    
+    .hero__image--about {
+        width: 100% !important;
+    }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
     // == HEADER ==
     .header-wrapper {
         margin-bottom: 6.25rem;
+    }
+
+    // == HERO SECTION - SUBPAGE ABOUT ==
+    .hero--about {
+        margin-top: 6.25rem;
+        gap: 3.75rem;
     }
 }
 
@@ -505,6 +541,11 @@
     // == HERO CONTENT ==
     .hero__content {
         padding-left: 5rem !important;
+    }
+
+    // == HERO SECTION - SUBPAGE ABOUT ==
+    .hero--about {
+        padding: 0 5rem;
     }
 
     // == SECTION INFORMATION SUBPAGE ==
@@ -533,5 +574,24 @@
 
     .mobile-nav {
         display: none !important;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    // == HERO SECTION - SUBPAGE ABOUT ==
+    .hero--about {
+        .hero__content--about {
+            gap: 40px !important;
+
+            .hero__intro--about {
+                .intro__description--about {
+                    margin-bottom: 0 !important;
+                }
+            }
+
+            .hero__stats--about {
+                padding: 0 !important;
+            }
+        }
     }
 }
