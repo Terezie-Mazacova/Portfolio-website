@@ -1,1 +1,263 @@
 // == SECTION TIMELINE ==
+.section-timeline {
+    margin-bottom: 9.375rem;
+
+    .timeline-header {
+        text-align: center;
+        margin-bottom: 5rem;
+
+        h2 {
+            @include h2;
+            margin-bottom: .375rem;
+        }
+
+        p {
+            @include global-paragraph;
+            max-width: 62.25rem;
+            margin: 0 auto;
+        }
+    }
+
+    .timeline {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 6.25rem;
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: .375rem;
+            height: 100%;
+            border-left: .125rem solid purple;
+            top: 0;
+            left: 50%;
+            margin-left: -0.1875rem;
+            opacity: 50%;
+            z-index: -1;
+            animation: moveline 6s linear forwards;            
+        }
+        
+        @keyframes moveline {
+            0% {
+                height: 0;
+            }
+        
+            100% {
+                height: 100%;
+            }
+        }
+    
+        .timeline-container {
+            position: relative;
+            width: 50%;
+            animation: movedown 1s linear forwards;
+            opacity: 0;
+    
+            @keyframes movedown {
+                0% {
+                    opacity: 1;
+                    transform: translateY(-1.875rem);
+                }
+            
+                100% {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+    
+            .year {
+                position: absolute;
+                right: -2.5rem;
+                top: 0;
+                background-color: $peach-96;
+                border-radius: .5rem;
+                padding: .75rem 1.25rem;
+                @include text-large;
+                font-weight: 500;
+                line-height: $line-height;
+                color: $grey-20;
+            }
+    
+            .year--right {
+                top: 0%;
+                right: 94.8%;
+            }
+
+            .circle-container {
+                position: relative;
+            
+                .circle {
+                    position: absolute;
+                    border-radius: 50%;
+                    transform: translate(-50%, -50%);
+                    top: 11.25rem;
+                    left: 99.7%;
+                }
+            
+                .circle--background {
+                    width: 3.125rem;
+                    height: 3.125rem;
+                    background-color: $peach-96;
+                    z-index: 1;
+                }
+                
+                .circle--main {
+                    width: 2.125rem;
+                    height: 2.125rem;
+                    background-color: $white;
+                    z-index: 2;
+                }
+                
+                .circle--inner {
+                    width: .875rem;
+                    height: .875rem;
+                    background-color: $purple;
+                    z-index: 3;
+                }
+
+                .circle--green {
+                    background-color: $green;
+                }
+
+                .circle--yellow {
+                    background-color: $yellow;
+                }
+
+                .circle--orange {
+                    background-color: $orange;
+                }
+
+                .circle--pink {
+                    background-color: $pink;
+                }
+
+                .circle--blue {
+                    background-color: $blue;
+                }
+            }
+            
+            .circle-right{
+                top: 11.375rem !important;
+                left: -0.125rem !important;
+            }
+    
+            .timeline-title {
+                padding: .75rem 1.5rem;
+                background-color: $peach-96;
+                border-radius: .5rem;
+                @include text-large;
+                font-weight: 600;
+                line-height: $line-height;
+                color: $grey-30;
+                position: absolute;
+                white-space: nowrap;
+            }
+    
+            .timeline-title--left {
+                top: 9.6875rem;
+                left: 108.5%;
+            }
+    
+            .timeline-title--right {
+                top: 9.875rem;
+                right: 108%;
+            }
+    
+            .timeline-text {
+                display: flex;
+                flex-direction: row-reverse;
+                align-items: center;
+                gap: 1.875rem;
+                padding: 3.125rem;
+                background-color: $peach-96;
+                border-radius: .75rem;
+    
+                .timeline-detail {
+                    @include global-paragraph;
+                    color: $grey-20;
+                    text-align: right;
+                }
+    
+                .timeline-detail--right {
+                    text-align: left;
+                }
+    
+                .timeline-icon {
+                    padding: .875rem 2rem;
+                    border-radius: .75rem;
+                    box-shadow: $box-shadow;
+                }
+    
+                .timeline-icon--purple {
+                    background-color: $purple;
+                }
+    
+                .timeline-icon--green {
+                    background-color: $green;
+                }
+    
+                .timeline-icon--yellow {
+                    background-color: $yellow;
+                }
+    
+                .timeline-icon--orange {
+                    background-color: $orange;
+                }
+    
+                .timeline-icon--pink {
+                    background-color: $pink;
+                }
+    
+                .timeline-icon--blue {
+                    background-color: $blue;
+                }
+            }
+    
+            .timeline-text--left {
+                margin-top: 6.6875rem;
+                margin-right: 4.125rem;
+            }
+    
+            .timeline-text--right {
+                flex-direction: row;
+                margin-top: 6.6875rem;
+                margin-left: 4.125rem;
+            }
+
+            &:nth-child(1) {
+                animation-delay: 0s;
+            }
+            
+            &:nth-child(2) {
+                animation-delay: 1.4s;
+            }
+            
+            &:nth-child(3) {
+                animation-delay: 2.3s;
+            }
+            
+            &:nth-child(4) {
+                animation-delay: 3.5s;
+            }
+            
+            &:nth-child(5) {
+                animation-delay: 4.6s;
+            }
+            
+            &:nth-child(6) {
+                animation-delay: 5.6s;
+            }
+        }
+
+        .timeline-container--left {
+            left: 0;
+        }
+        
+        .timeline-container--right {
+            left: 50%;
+        }
+    }
+}
+
+
