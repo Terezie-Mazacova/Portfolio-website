@@ -312,6 +312,9 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
+.header-wrapper .hero .hero__image--home img {
+  height: 100%;
+}
 
 .hero--about {
   flex-direction: row-reverse;
@@ -473,6 +476,11 @@
   }
   .hero .hero__content {
     margin-top: 3.75rem !important;
+  }
+  .hero .hero__image img {
+    width: 60% !important;
+    display: flex;
+    margin: 0 auto;
   }
   .section-information {
     padding: 60px;

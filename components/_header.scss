@@ -239,6 +239,12 @@
                 object-fit: cover;
             }
         }
+
+        .hero__image--home {
+            img {
+                height: 100%;
+            }
+        }
     }
 }
 
@@ -411,6 +417,7 @@
     }
 }
 
+
 @media screen and (min-width: 768px) and (max-width: 1279px) {
     // == LOGO AND NAV ==
     .branding-nav {
@@ -423,6 +430,14 @@
 
         .hero__content {
             margin-top: 3.75rem !important;
+        }
+
+        .hero__image {
+            img {
+                width: 60% !important;
+                display: flex;
+                margin: 0 auto;
+            }
         }
     }
 
