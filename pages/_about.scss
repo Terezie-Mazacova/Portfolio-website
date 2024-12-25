@@ -35,7 +35,7 @@
             margin-left: -0.1875rem;
             opacity: 50%;
             z-index: -1;
-            animation: moveline 6s linear forwards;            
+            animation: moveline 10s linear forwards;            
         }
         
         @keyframes moveline {
@@ -64,6 +64,30 @@
                     opacity: 1;
                     transform: translateY(0);
                 }
+            }
+
+            &:nth-child(1) {
+                animation-delay: 0s;
+            }
+            
+            &:nth-child(2) {
+                animation-delay: 2.2s;
+            }
+            
+            &:nth-child(3) {
+                animation-delay: 4s;
+            }
+            
+            &:nth-child(4) {
+                animation-delay: 5.8s;
+            }
+            
+            &:nth-child(5) {
+                animation-delay: 7.4s;
+            }
+            
+            &:nth-child(6) {
+                animation-delay: 9s;
             }
     
             .year {
@@ -225,29 +249,6 @@
                 margin-left: 4.125rem;
             }
 
-            &:nth-child(1) {
-                animation-delay: 0s;
-            }
-            
-            &:nth-child(2) {
-                animation-delay: 1.4s;
-            }
-            
-            &:nth-child(3) {
-                animation-delay: 2.3s;
-            }
-            
-            &:nth-child(4) {
-                animation-delay: 3.5s;
-            }
-            
-            &:nth-child(5) {
-                animation-delay: 4.6s;
-            }
-            
-            &:nth-child(6) {
-                animation-delay: 5.6s;
-            }
         }
 
         .timeline-container--left {
@@ -261,3 +262,97 @@
 }
 
 
+
+// == BREAKPOINTY ==
+@media screen and (max-width: 767px) {
+    .timeline-icon {
+        padding: .625rem 1.25rem !important;
+
+        img {
+            width: 1.875rem;
+            height: 3.125rem;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1023px) {
+    .section-timeline {
+        margin-bottom: 3.75rem;
+
+        .timeline-header {
+            margin-bottom: 2.5rem;
+        }
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .section-timeline {
+        .timeline-container {
+            position: unset !important;
+            width: 100% !important;
+            
+            .year {
+                position: unset !important;
+                display: flex !important;
+                justify-content: center;
+                max-width: 5.5rem !important;
+                margin: 0 auto !important;
+            }
+
+            .circle-container {
+                .circle {
+                    left: 49.8% !important;
+                }
+            }   
+    
+            .timeline-text {
+                margin-top: 5rem !important;
+            }
+    
+
+            .timeline-title--right,
+            .timeline-title--left {
+                position: unset !important;
+                display: flex !important;
+                justify-content: center;
+                max-width: 20rem !important;
+                margin: 3.125rem auto 0 auto;
+            }
+
+            .timeline-text--left {
+                flex-direction: column !important;
+                margin-right: 0 !important;
+    
+                .timeline-detail {
+                    text-align: center !important;
+                }
+            } 
+    
+            .timeline-text--right {
+                flex-direction: column !important;
+                margin-left: 0 !important;
+    
+                .timeline-detail--right {
+                    text-align: center !important;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+    .section-timeline {
+        margin-bottom: 6.25rem;
+
+        .timeline-header {
+            margin-bottom: 3.75rem;
+        }
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .timeline-text {
+        padding: 2.5rem !important;
+    }
+}
