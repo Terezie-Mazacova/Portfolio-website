@@ -246,6 +246,8 @@
             }
         }
     }
+
+    
 }
 
 // == SECTION HERO SUBPAGE ABOUT ==
@@ -359,43 +361,42 @@
 // == BREAKPONTY ==
 @media screen and (max-width: 767px) {
     // == LOGO AND NAV ==
-    .branding-nav {
-        padding: 1rem !important;
-    }
+    .header-wrapper {
+        .header-content {
+            .branding-nav {
+                padding: 1rem;
 
-    // == HAMBURGER MENU == 
-    .mobile-nav {
-        width: 100% !important;
-    }
-
-    // == HERO CONTENT == 
-    .hero {
-        padding: 0 1rem !important;
-
-        .hero__content {
-            gap: 2.5rem !important;
-            margin-top: 1.875rem !important;
-
-            .hero__intro {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-
-                .intro__description {
-                    margin-bottom: 1.5rem !important;
-                }
-
-                .hero__actions {
-                    gap: 1.25rem !important;
+                // == HAMBURGER MENU == 
+                .mobile-nav {
+                    width: 100%;
                 }
             }
         }
-    }
 
-    // == HERO SECTION - SUBPAGE ABOUT ==
-    .intro__description--about {
-        margin-bottom: unset !important;
+        // == HERO CONTENT == 
+        .hero {
+            padding: 0 1rem;
+
+            .hero__content {
+                gap: 2.5rem;
+                margin-top: 1.875rem;
+
+                .hero__intro {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+
+                    .intro__description {
+                        margin-bottom: 1.5rem;
+                    }
+
+                    .hero__actions {
+                        gap: 1.25rem;
+                    }
+                }
+            }
+        }
     }
 
     // == SECTION INFORMATION SUBPAGE ==
@@ -420,23 +421,27 @@
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
     // == LOGO AND NAV ==
-    .branding-nav {
-        padding: 1.25rem 2rem !important;
-    }
-
-    // == HERO CONTENT ==
-    .hero {
-        padding: 0 2rem;
-
-        .hero__content {
-            margin-top: 3.75rem !important;
+    .header-wrapper {
+        .header-content {
+            .branding-nav {
+                padding: 1.25rem 2rem;
+            }
         }
 
-        .hero__image {
-            img {
-                width: 60% !important;
-                display: flex;
-                margin: 0 auto;
+        // == HERO CONTENT ==
+        .hero {
+            padding: 0 2rem;
+
+            .hero__content {
+                margin-top: 3.75rem;
+            }
+
+            .hero__image {
+                img {
+                    width: 60%;
+                    display: flex;
+                    margin: 0 auto;
+                }
             }
         }
     }
@@ -451,51 +456,55 @@
     // == HEADER ==
     .header-wrapper {
         margin-bottom: 3.75rem;
-    }
 
-    // == HERO CONTENT == 
-    .hero__stats {
-        display: grid !important;
-        grid-template-columns: repeat(4, 1fr);
-        gap: .625rem;
-        background-color: unset !important;
-        justify-content: unset !important;
-        padding: 0 !important;
-        border-top-left-radius: 0 !important;
-        border-bottom-left-radius: 0 !important;
+        .hero {
+            .hero__content {
+                // == HERO CONTENT == 
+                .hero__stats {
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    gap: .625rem;
+                    background-color: unset;
+                    justify-content: unset;
+                    padding: 0;
+                    border-top-left-radius: 0;
+                    border-bottom-left-radius: 0;
 
-        .hero__stat {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-color: $peach-96;
-            border-radius: .5rem;
-            padding: 1rem 1.125rem;
+                    .hero__stat {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        background-color: $peach-96;
+                        border-radius: .5rem;
+                        padding: 1rem 1.125rem;
 
-            &:nth-child(1) {
-                grid-column: span 4;
-            }
+                        &:nth-child(1) {
+                            grid-column: span 4;
+                        }
 
-            &:nth-child(2) {
-                grid-column: span 2;
-                text-align: center; 
-            }
+                        &:nth-child(2) {
+                            grid-column: span 2;
+                            text-align: center; 
+                        }
 
-            &:nth-child(3) {
-                grid-column: span 2;
-                text-align: center;
+                        &:nth-child(3) {
+                            grid-column: span 2;
+                            text-align: center;
+                        }
+                    }
+                }
             }
         }
-    }
 
-    // == HERO SECTION - SUBPAGE ABOUT ==
-    .hero--about {
-        margin-top: 0;
-        gap: 2.5rem;
+        // == HERO SECTION - SUBPAGE ABOUT ==
+        .hero--about {
+            margin-top: 0;
+            gap: 2.5rem;
 
-        .hero__content--about {
-            .hero__stats--about {
-                border: none !important;
+            .hero__content--about {
+                .hero__stats--about {
+                    border: none;
+                }
             }
         }
     }
@@ -507,30 +516,31 @@
 }
 
 @media screen and (max-width: 1279px) {
-    // == HERO CONTENT ==
-    .hero {
-        flex-direction: column-reverse;
+    .header-wrapper {
+        // == HERO CONTENT ==
+        .hero {
+            flex-direction: column-reverse;
 
-        .hero__content {
-            padding: 0 !important;
+            .hero__content {
+                padding: 0;
+
+                .hero__intro {
+                    padding-right: 0;
+                }
+            }
         }
 
-        .hero__intro {
-            padding-right: 0 !important;
+        // == HERO SECTION - SUBPAGE ABOUT ==
+        .hero--about {
+            .hero__content--about {
+                margin-top: 0;
+                width: 100%;
+            }
         }
-    }
-
-
-    // == HERO SECTION - SUBPAGE ABOUT ==
-    .hero--about {
-        .hero__content--about {
-            margin-top: 0 !important;
-            width: 100% !important;
+        
+        .hero__image--about {
+            width: 100%;
         }
-    }
-    
-    .hero__image--about {
-        width: 100% !important;
     }
 }
 
@@ -548,14 +558,20 @@
 }
 
 @media screen and (min-width: 1280px) and (max-width: 1440px) {
-    // == LOGO AND NAV ==
-    .branding-nav {
-        padding: 1.25rem 5rem !important;
-    }
+    .header-wrapper {
+        .header-content {
+            // == LOGO AND NAV ==
+            .branding-nav {
+                padding: 1.25rem 5rem;
+            }
+        }
 
-    // == HERO CONTENT ==
-    .hero__content {
-        padding-left: 5rem !important;
+        // == HERO CONTENT ==
+        .hero {
+            .hero__content {
+                padding-left: 5rem;
+            }
+        }
     }
 
     // == HERO SECTION - SUBPAGE ABOUT ==
@@ -575,37 +591,45 @@
 
 // == BREAKPOINTY FOR HAMBURGER AND DESKTOP MENU ==
 @media screen and (max-width: 1439px) {
-    // == NAV MENU DESKTOP ==
-    .nav-actions {
-        display: none !important;
+    .header-wrapper {
+        .header-content {
+            .branding-nav {
+                // == NAV MENU DESKTOP ==
+                .nav-actions {
+                    display: none;
+                }
+            }
+        }
     }
 }
 
 @media screen and (min-width: 1440px) {
-    // == HAMBURGER MENU ==
-    .hamburger {
-        display: none !important;
-    }
+    .header-wrapper  {
+        .header-content {
+            .branding-nav {
+                // == HAMBURGER MENU ==
+                .hamburger {
+                    display: none;
+                }
 
-    .mobile-nav {
-        display: none !important;
+                .mobile-nav {
+                    display: none;
+                }
+            }
+        }
     }
 }
 
 @media screen and (max-width: 1440px) {
-    // == HERO SECTION - SUBPAGE ABOUT ==
-    .hero--about {
-        .hero__content--about {
-            gap: 40px !important;
+    .header-wrapper {
+        // == HERO SECTION - SUBPAGE ABOUT ==
+        .hero--about {
+            .hero__content--about {
+                gap: 2.5rem !important;
 
-            .hero__intro--about {
-                .intro__description--about {
-                    margin-bottom: 0 !important;
+                .hero__stats--about {
+                    padding: 0 !important;
                 }
-            }
-
-            .hero__stats--about {
-                padding: 0 !important;
             }
         }
     }
