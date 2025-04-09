@@ -15,6 +15,61 @@
             @include global-paragraph;
         }
     }
+
+    .testimonial-card {
+        background-color: $peach-96;
+        padding: 3.125rem;
+        border-radius: .75rem;    
+    
+        .testimonial-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+    
+            .testimonial-header {
+                h3 {
+                    @include h3-small;
+                    font-weight: 500;
+                }
+    
+                .testimonial-domain {
+                    @include global-paragraph;
+                    color: $grey-40;
+                }
+            }
+    
+            .testimonial-social {
+                display: flex;
+                gap: .625rem;
+                margin-left: 1.25rem;
+    
+                .testimonial-social-link {
+                    padding: .75rem;
+                    border: 1px solid $peach-90;
+                    border-radius: .5rem;
+                }
+            }
+        }
+    
+        .testimonial-rating {
+            display: flex;
+            gap: .3125rem;
+            color: $purple-50;
+            margin-top: 1.875rem;
+            margin-bottom: 1.875rem;
+    
+            .testimonial-rating-star {
+                width: 1.5rem;
+                height: 1.5rem;
+            }
+        }
+    
+        blockquote {
+            p {
+                @include global-paragraph;
+            }
+        }
+    }
 }
 
 .splide__header {
@@ -65,60 +120,7 @@
     }
 }
 
-.testimonial-card {
-    background-color: $peach-96;
-    padding: 3.125rem;
-    border-radius: .75rem;    
 
-    .testimonial-meta {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        .testimonial-header {
-            h3 {
-                @include h3-small;
-                font-weight: 500 !important;
-            }
-
-            .testimonial-domain {
-                @include global-paragraph;
-                color: $grey-40;
-            }
-        }
-
-        .testimonial-social {
-            display: flex;
-            gap: .625rem;
-            margin-left: 1.25rem;
-
-            .testimonial-social-link {
-                padding: .75rem;
-                border: 1px solid $peach-90;
-                border-radius: .5rem;
-            }
-        }
-    }
-
-    .testimonial-rating {
-        display: flex;
-        gap: .3125rem;
-        color: $purple-50;
-        margin-top: 1.875rem;
-        margin-bottom: 1.875rem;
-
-        .testimonial-rating-star {
-            width: 1.5rem;
-            height: 1.5rem;
-        }
-    }
-
-    blockquote {
-        p {
-            @include global-paragraph;
-        }
-    }
-}
 
 // == SLIDERS - PORTFOLIO PAGE ==
 .section-sliders-projects {
@@ -164,33 +166,37 @@
 // == BREAKPOINTY ==
 @media screen and (max-width: 767px) {
     // == TESTIMONIALS SECTION ==
-    .splide__header {
-        margin-bottom: 1.875rem !important;
-    }
-
-    .testimonial-card {
-        padding: 1.875rem !important;
-
-        .testimonial-meta {
-            flex-direction: column;
-
-            .testimonial-header {
-                text-align: center;
-                margin-bottom: 1.25rem;
-            }
+    .testimonials-section {
+        .splide__header {
+            margin-bottom: 1.875rem;
         }
 
-        .testimonial-rating {
-            justify-content: center;
-            margin: 1.25rem 0 !important;
+        .testimonial-card {
+            padding: 1.875rem;
+    
+            .testimonial-meta {
+                flex-direction: column;
+    
+                .testimonial-header {
+                    text-align: center;
+                    margin-bottom: 1.25rem;
+                }
+            }
+    
+            .testimonial-rating {
+                justify-content: center;
+                margin: 1.25rem 0;
+            }
         }
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     // == TESTIMONIALS SECTION ==
-    .testimonial-card {
-        padding: 2.1875rem !important;
+    .testimonials-section {
+        .testimonial-card {
+            padding: 2.1875rem;
+        }
     }
 }
 
