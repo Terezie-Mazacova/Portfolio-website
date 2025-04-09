@@ -696,8 +696,8 @@
 }
 
 @media screen and (max-width: 480px) {
-  .footer-nav ul {
-    display: grid !important;
+  .footer-content .container .footer-nav ul {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.25rem;
     justify-items: center;
@@ -719,18 +719,18 @@
   }
 }
 @media screen and (max-width: 1439px) {
-  .footer-logo-nav {
+  .footer-content .container .footer-logo-nav {
     margin-bottom: 1.875rem;
   }
-  .footer-contact {
-    display: none !important;
+  .footer-content .container .footer-contact {
+    display: none;
   }
 }
 @media screen and (min-width: 1440px) and (max-width: 1920px) {
-  .footer-contact {
-    margin: 1.875rem 9.375rem !important;
+  .footer-content .container .footer-contact {
+    margin: 1.875rem 9.375rem;
   }
-  .footer-contact .contact-item {
+  .footer-content .container .footer-contact .contact-item {
     flex-direction: column;
     align-items: center;
   }
