@@ -268,9 +268,8 @@
             }
         } 
 
-
         .contact-form {
-            padding: 1.5rem !important;
+            padding: 1.5rem;
 
             .fieldset-contact-reason {
                 padding: 3rem 1.5rem 1.5rem 1.5rem;
@@ -285,12 +284,14 @@
                     grid-template-columns: repeat(1, 1fr);
                     margin-top: 1.5rem;
 
-                    input[type="checkbox"] + label::before {
-                        top: -0.25rem !important;
-                    }
-
-                    input[type="checkbox"]:checked + label::after {
-                        top: .125rem !important;
+                    .checkbox-option {
+                        input[type="checkbox"] + label::before {
+                            top: -0.25rem;
+                        }
+    
+                        input[type="checkbox"]:checked + label::after {
+                            top: .125rem;
+                        }
                     }
                 }
             }
@@ -301,30 +302,32 @@
                     margin-bottom: 1.5rem;
                 }
             }
-        }
 
-        .form-btn {
-            width: 100% !important;
+            .form-btn {
+                width: 100%;
+            }
         }
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-    .contact-form {
-        padding: 2.1875rem !important;
-
-        .fieldset-contact-reason {
-            margin: 1.875rem 0 !important;
-
-            .checkbox-group {
-                margin-top: 1.875rem !important;
+    .contact-section {
+        .contact-form {
+            padding: 2.1875rem;
+    
+            .fieldset-contact-reason {
+                margin: 1.875rem 0;
+    
+                .checkbox-group {
+                    margin-top: 1.875rem;
+                }
             }
-        }
-
-        .form-message {
-            textarea {
-                padding: 1.875rem !important;
-                margin-bottom: 1.875rem !important;
+    
+            .form-message {
+                textarea {
+                    padding: 1.875rem;
+                    margin-bottom: 1.875rem;
+                }
             }
         }
     }
@@ -335,8 +338,10 @@
         margin-bottom: 3.75rem;
         gap: 2.5rem;
 
-        .personal-details {
-            grid-template-columns: repeat(1, 1fr) !important;
+        .contact-form {
+            .personal-details {
+                grid-template-columns: repeat(1, 1fr);
+            }
         }
     }
 }
@@ -352,7 +357,7 @@
                 margin: 2.1875rem 0;
 
                 .checkbox-group {
-                    margin-top: 2.1875rem !important;
+                    margin-top: 2.1875rem;
                 }
             }
 
@@ -388,15 +393,25 @@
 }
 
 @media screen and (max-width: 1440px) {
-    .contact-summary {
-        gap: 1.875rem !important;
-
-        .contact-card {
-            padding: 1.25rem 1.5rem !important;
-        }
-    }
+    .contact-section {
+        .contact-summary {
+            gap: 1.875rem;
     
-    .form-input {
-        padding: 1.25rem 1.5rem !important;
+            .contact-cards {
+                .contact-card {
+                    padding: 1.25rem 1.5rem;
+                }
+            }
+        }
+        
+        .contact-form {
+            .personal-details {
+                .input-group {
+                    .form-input {
+                        padding: 1.25rem 1.5rem;
+                    }
+                }
+            }
+        }
     }
 }
