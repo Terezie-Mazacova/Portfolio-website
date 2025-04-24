@@ -253,8 +253,8 @@
                     color: $grey-20;
 
                     svg {
-                        width: 20px;
-                        height: 20px;
+                        width: 1.25rem;
+                        height: 1.25rem;
                     }
                 }
             }
@@ -324,139 +324,187 @@
 // == BREAKPOINTY ==
 @media screen and (min-width: 320px) and (max-width: 480px) {
     // == SECTION FAQ == 
-    .faq-title {
-        padding-right: 60px !important;
+    .section-faq {
+        .faq-wrapper {
+            .faq-container {
+                .faq {
+                    .faq-content {
+                        .faq-title {
+                            padding-right: 3.75rem;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
 @media screen and (min-width: 481px) and (max-width: 767px) {
     // == SECTION FAQ == 
-    .faq-title {
-        padding-right: 80px !important;
+    .section-faq {
+        .faq-wrapper {
+            .faq-container {
+                .faq {
+                    .faq-content {
+                        .faq-title {
+                            padding-right: 5rem;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
 @media screen and (max-width: 767px) {
     // == SECTION CREATIVE SKILLS ==
-    .skills-cards {
-        grid-template-columns: repeat(1, 1fr) !important;
-
-        .skill-card {
-            padding: 2.5rem !important;
+    .section-skills {
+        .skills-cards {
+            grid-template-columns: repeat(1, 1fr);
+    
+            .skill-card {
+                padding: 2.5rem;
+            }
         }
     }
 
     // == SECTION BENEFITS ==
-    .benefits-cards {
-        grid-template-columns: repeat(1, 1fr) !important;
-
-        .benefit-card {
-            padding: 1.875rem !important;
-            
-            &:nth-child(1),
-            &:nth-child(2),
-            &:nth-child(3),
-            &:nth-child(4),
-            &:nth-child(5) {
-                grid-column: span 1 !important;
-            }
-
-            h3 {
-                margin-bottom: .625rem !important;
+    .section-benefits {
+        .benefits-cards {
+            grid-template-columns: repeat(1, 1fr);
+    
+            .benefit-card {
+                padding: 1.875rem;
+                
+                &:nth-child(1),
+                &:nth-child(2),
+                &:nth-child(3),
+                &:nth-child(4),
+                &:nth-child(5) {
+                    grid-column: span 1;
+                }
+    
+                h3 {
+                    margin-bottom: .625rem;
+                }
             }
         }
     }
 
     // == SECTION MY WORKS == 
-    .projects-list {
-        margin-bottom: 1.875rem !important;
-
-        .project {
-            padding: 1.875rem !important;
+    .section-projects {
+        .projects-list {
+            margin-bottom: 1.875rem;
     
-            h3 {
-                margin-bottom: 1.25rem !important;
+            .project {
+                padding: 1.875rem;
+        
+                h3 {
+                    margin-bottom: 1.25rem;
+                }
             }
         }
     }
 
     // == SECTION FAQ ==
-    .faq-container {
-        padding: 1.25rem !important;
-
-        .faq {
-            padding: 1.25rem !important;
-            margin-bottom: 1.25rem !important;
-            position: relative;
-
-            &:last-child {
-                margin-bottom: 0 !important;
+    .section-faq {
+        .faq-wrapper {
+            .faq-container {
+                padding: 1.25rem;
+        
+                .faq {
+                    padding: 1.25rem;
+                    margin-bottom: 1.25rem;
+                    position: relative;
+        
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+        
+                    .faq-toggle {
+                        position: absolute;
+                        top: 25%;
+                        right: 8%;
+                        padding: .25rem;
+                    }
+        
+                    &.active .faq-toggle {
+                        top: 10%;
+                    }
+                }
             }
-
-            .faq-toggle {
-                position: absolute;
-                top: 25%;
-                right: 8%;
-                padding: .25rem !important;
-            }
-
-            &.active .faq-toggle {
-                top: 10% !important;
+        
+            .faq-extra {
+                padding: 1.875rem;
             }
         }
-    }
-
-    .faq-extra {
-        padding: 1.875rem !important;
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     // == SECTION CREATIVE SKILLS ==
-    .skills-cards {
-        grid-template-columns: repeat(2, 1fr) !important;
+    .section-skills {
+        .skills-cards {
+            grid-template-columns: repeat(2, 1fr);
+        }
     }
 
     // == SECTION BENEFITS ==
-    .benefits-cards {
-        grid-template-columns: repeat(4, 1fr) !important;
-
-        .benefit-card {
-            padding: 2.1875rem !important;
-            
-            &:nth-child(1),
-            &:nth-child(2),
-            &:nth-child(3),
-            &:nth-child(4) {
-                grid-column: span 2 !important;
-            }
-
-            &:nth-child(5) {
-                grid-column: span 4;
-                justify-self: center !important;
+    .section-benefits {
+        .benefits-cards {
+            grid-template-columns: repeat(4, 1fr);
+    
+            .benefit-card {
+                padding: 2.1875rem;
+                
+                &:nth-child(1),
+                &:nth-child(2),
+                &:nth-child(3),
+                &:nth-child(4) {
+                    grid-column: span 2;
+                }
+    
+                &:nth-child(5) {
+                    grid-column: span 4;
+                    justify-self: center;
+                }
             }
         }
     }
 
-    // == SECTION MY WORKS == 
-    .project {
-        padding: 2.1875rem !important;
+    // == SECTION MY WORKS ==
+    .section-projects {
+        .projects-list {
+            .project {
+                padding: 2.1875rem;
+            }
+        }
     }
 
     // == SECTION FAQ ==
-    .faq-container {
-        padding: 1.875rem !important;
-    }
-
-    .faq-extra {
-        padding: 2.1875rem !important;
+    .section-faq {
+        .faq-wrapper {
+            .faq-container {
+                padding: 1.875rem;
+            }
+        
+            .faq-extra {
+                padding: 2.1875rem;
+            }
+        }
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1440px) {
     // == SECTION FAQ ==
-    .faq {
-        padding: 1.5625rem !important;
+    .section-faq {
+        .faq-wrapper {
+            .faq-container {
+                .faq {
+                    padding: 1.5625rem;
+                }
+            }
+        }
     }
 }
 
@@ -507,13 +555,13 @@
             gap: 1.875rem;
     
             .faq-container {
-                width: 100% !important;
+                width: 100%;
             }
     
             .faq-extra {
-                align-items: center !important;
+                align-items: center;
                 text-align: center;
-                width: 100% !important;
+                width: 100%;
     
                 .faq-contact-link {
                     width: 100%;
@@ -541,8 +589,10 @@
             margin-bottom: 3.75rem;
         }
 
-        .benefit-card {
-            padding: 2.5rem !important;
+        .benefits-cards {
+            .benefit-card {
+                padding: 2.5rem;
+            }
         }
     }
 
@@ -556,8 +606,12 @@
     }
 
     // == SECTION MY WORKS == 
-    .project {
-        padding: 2.5rem !important;
+    .section-projects {
+        .projects-list {
+            .project {
+                padding: 2.5rem;
+            }
+        }
     }
 
     // == SECTION FAQ ==
@@ -568,49 +622,61 @@
             margin-bottom: 3.75rem;
         }
 
-        .faq-container {
-            padding: 2.5rem !important;
-        }
-    
-        .faq-extra {
-            padding: 2.5rem !important;
+        .faq-wrapper {
+            .faq-container {
+                padding: 2.5rem;
+            }
+        
+            .faq-extra {
+                padding: 2.5rem;
+            }
         }
     }
 }
 
 @media screen and (max-width: 1440px) {
     // == SECTION CREATIVE SKILLS ==
-    .skills-header {
-        h2 {
-            margin-bottom: .125rem !important;
+    .section-skills {
+        .skills-header {
+            h2 {
+                margin-bottom: .125rem;
+            }
         }
     }
 
     // == SECTION BENEFITS ==
-    .header-benefits {
-        h2 {
-            margin-bottom: .125rem !important;
+    .section-benefits {
+        .header-benefits {
+            h2 {
+                margin-bottom: .125rem;
+            }
         }
     }
 
     // == SECTION MY WORKS ==
-    .projects-header {
-        h2 {
-            margin-bottom: .125rem !important;
+    .section-projects {
+        .projects-header {
+            h2 {
+                margin-bottom: .125rem;
+            }
         }
     }
 
     // == TESTIMONIALS SECTION ==
-    .header-testimonials {
-        h2 {
-            margin-bottom: .125rem !important;
+    .testimonials-section {
+        .header-testimonials {
+            h2 {
+                margin-bottom: .125rem;
+            }
         }
     }
 
     // == SECTION FAQ ==
-    .faq-header {
-        h2 {
-            margin-bottom: .125rem !important;
+    .section-faq {
+        .faq-header {
+            h2 {
+                margin-bottom: .125rem;
+            }
         }
     }
 }
