@@ -315,37 +315,36 @@
 .header-wrapper .hero .hero__image--home img {
   height: 100%;
 }
-
-.hero--about {
+.header-wrapper .hero--about {
   flex-direction: row-reverse;
   gap: 5rem;
   max-width: 120rem;
   margin: 9.375rem auto 0 auto;
   padding: 0 10.125rem;
 }
-.hero--about .hero__content--about {
+.header-wrapper .hero--about .hero__content--about {
   width: 50%;
-  padding: 0 !important;
-  gap: 3.75rem !important;
+  padding: 0;
+  gap: 3.75rem;
 }
-.hero--about .hero__content--about .hero__intro--about {
-  padding: 0 !important;
+.header-wrapper .hero--about .hero__content--about .hero__intro--about {
+  padding: 0;
 }
-.hero--about .hero__content--about .hero__intro--about .intro__greeting--about {
-  max-width: 579px !important;
-  white-space: unset !important;
+.header-wrapper .hero--about .hero__content--about .hero__intro--about .intro__greeting--about {
+  max-width: 579px;
+  white-space: unset;
 }
-.hero--about .hero__content--about .hero__intro--about .intro__description--about {
-  margin-bottom: 0 !important;
+.header-wrapper .hero--about .hero__content--about .hero__intro--about .intro__description--about {
+  margin-bottom: 0;
 }
-.hero--about .hero__content--about .hero__stats--about {
-  background-color: transparent !important;
+.header-wrapper .hero--about .hero__content--about .hero__stats--about {
+  background-color: transparent;
   border-top: 1px solid #5700FF;
   border-bottom: 1px solid #5700FF;
-  border-radius: 0 !important;
-  padding: 1.25rem 0 !important;
+  border-radius: 0;
+  padding: 1.25rem 0;
 }
-.hero--about .hero__image--about {
+.header-wrapper .hero--about .hero__image--about {
   width: 50%;
 }
 
@@ -541,7 +540,7 @@
     margin-top: 0;
     width: 100%;
   }
-  .header-wrapper .hero__image--about {
+  .header-wrapper .hero--about .hero__image--about {
     width: 100%;
   }
 }
@@ -561,8 +560,11 @@
   .header-wrapper .hero .hero__content {
     padding-left: 5rem;
   }
-  .hero--about {
+  .header-wrapper .hero--about {
     padding: 0 5rem;
+  }
+  .header-wrapper .hero--about .hero__content--about {
+    padding-left: 0;
   }
   .section-information {
     padding: 3.75rem 15.625rem;
@@ -583,10 +585,7 @@
 }
 @media screen and (max-width: 1440px) {
   .header-wrapper .hero--about .hero__content--about {
-    gap: 2.5rem !important;
-  }
-  .header-wrapper .hero--about .hero__content--about .hero__stats--about {
-    padding: 0 !important;
+    gap: 2.5rem;
   }
 }
 .footer-content {
